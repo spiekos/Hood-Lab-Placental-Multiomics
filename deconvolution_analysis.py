@@ -60,10 +60,10 @@ plt.savefig(file_path)
 file_name = '/PATH/TO/FILE/clr_results.csv'
 dat = pd.DataFrame(Y, columns = df.columns[:-3], index = df.index)
 
-df_result = run_tests(dat, df, md, method = 'control')
+df_result = defun.run_tests(dat, df, md, method = 'control')
 df_result.to_csv(file_name)
 
-plot_results(df_result, df, dat, md.loc[pats, :])
+defun.plot_results(df_result, df, dat, md.loc[pats, :])
 # -- the above will save figures in working directory
 
 ##### plot the results as histograms. whisker plot is done in another notebook. This formats them all into a single image ####
