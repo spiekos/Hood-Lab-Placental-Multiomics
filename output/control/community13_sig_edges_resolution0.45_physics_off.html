@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1500px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#287A8E", "id": "1-carboxyethylphenylalanine", "inherit_colors": false, "label": "1-carboxyethylphenylalanine", "shape": "dot"}, {"color": "#443982", "id": "TBC1D25", "inherit_colors": false, "label": "TBC1D25", "shape": "dot"}, {"color": "#1EA087", "id": "IRAK1", "inherit_colors": false, "label": "IRAK1", "shape": "dot"}, {"color": "#26808E", "id": "X-25856", "inherit_colors": false, "label": "X-25856", "shape": "dot"}, {"color": "#228A8D", "id": "RAB11FIP5", "inherit_colors": false, "label": "RAB11FIP5", "shape": "dot"}, {"color": "#471265", "id": "NIBAN2", "inherit_colors": false, "label": "NIBAN2", "shape": "dot"}, {"color": "#26808E", "id": "X-11979", "inherit_colors": false, "label": "X-11979", "shape": "dot"}, {"color": "#443982", "id": "TMEM129", "inherit_colors": false, "label": "TMEM129", "shape": "dot"}, {"color": "#31658D", "id": "KMT2D", "inherit_colors": false, "label": "KMT2D", "shape": "dot"}, {"color": "#218C8D", "id": "TINCR", "inherit_colors": false, "label": "TINCR", "shape": "dot"}, {"color": "#443982", "id": "NF2", "inherit_colors": false, "label": "NF2", "shape": "dot"}, {"color": "#29798E", "id": "ADAM19", "inherit_colors": false, "label": "ADAM19", "shape": "dot"}, {"color": "#2E6C8E", "id": "TRAF3", "inherit_colors": false, "label": "TRAF3", "shape": "dot"}, {"color": "#2A758E", "id": "hsa-miR-302b-5p", "inherit_colors": false, "label": "hsa-miR-302b-5p", "shape": "dot"}, {"color": "#30678D", "id": "LINC02035", "inherit_colors": false, "label": "LINC02035", "shape": "dot"}, {"color": "#31658D", "id": "RBSN", "inherit_colors": false, "label": "RBSN", "shape": "dot"}, {"color": "#287A8E", "id": "docosadienoylcarnitine (C22:2)*", "inherit_colors": false, "label": "docosadienoylcarnitine (C22:2)*", "shape": "dot"}, {"color": "#218C8D", "id": "DNAJC5", "inherit_colors": false, "label": "DNAJC5", "shape": "dot"}, {"color": "#1EA087", "id": "POLR3H", "inherit_colors": false, "label": "POLR3H", "shape": "dot"}, {"color": "#218D8C", "id": "SOCS7", "inherit_colors": false, "label": "SOCS7", "shape": "dot"}, {"color": "#228A8D", "id": "OPA3", "inherit_colors": false, "label": "OPA3", "shape": "dot"}, {"color": "#83D34B", "id": "behenoylcarnitine (C22)*", "inherit_colors": false, "label": "behenoylcarnitine (C22)*", "shape": "dot"}, {"color": "#443982", "id": "PSD4", "inherit_colors": false, "label": "PSD4", "shape": "dot"}, {"color": "#472B7A", "id": "X-25936", "inherit_colors": false, "label": "X-25936", "shape": "dot"}, {"color": "#29798E", "id": "KIAA1522", "inherit_colors": false, "label": "KIAA1522", "shape": "dot"}, {"color": "#24AA82", "id": "ELK1", "inherit_colors": false, "label": "ELK1", "shape": "dot"}, {"color": "#443982", "id": "PLPP3", "inherit_colors": false, "label": "PLPP3", "shape": "dot"}, {"color": "#228A8D", "id": "CTDSP2", "inherit_colors": false, "label": "CTDSP2", "shape": "dot"}, {"color": "#29798E", "id": "LINC00641", "inherit_colors": false, "label": "LINC00641", "shape": "dot"}, {"color": "#287A8E", "id": "arachidoylcarnitine (C20)*", "inherit_colors": false, "label": "arachidoylcarnitine (C20)*", "shape": "dot"}, {"color": "#39B976", "id": "PSKH1", "inherit_colors": false, "label": "PSKH1", "shape": "dot"}, {"color": "#29798E", "id": "CIC", "inherit_colors": false, "label": "CIC", "shape": "dot"}, {"color": "#228A8D", "id": "BLTP2", "inherit_colors": false, "label": "BLTP2", "shape": "dot"}, {"color": "#3A538B", "id": "hsa-miR-548h-3p", "inherit_colors": false, "label": "hsa-miR-548h-3p", "shape": "dot"}, {"color": "#472B7A", "id": "RAB30-DT", "inherit_colors": false, "label": "RAB30-DT", "shape": "dot"}, {"color": "#443982", "id": "AP5S1", "inherit_colors": false, "label": "AP5S1", "shape": "dot"}, {"color": "#31658D", "id": "ANKRD52", "inherit_colors": false, "label": "ANKRD52", "shape": "dot"}, {"color": "#287A8E", "id": "1-carboxyethylvaline", "inherit_colors": false, "label": "1-carboxyethylvaline", "shape": "dot"}, {"color": "#22898D", "id": "nervonoylcarnitine (C24:1)*", "inherit_colors": false, "label": "nervonoylcarnitine (C24:1)*", "shape": "dot"}, {"color": "#31658D", "id": "KHNYN", "inherit_colors": false, "label": "KHNYN", "shape": "dot"}, {"color": "#433A83", "id": "RHOD", "inherit_colors": false, "label": "RHOD", "shape": "dot"}, {"color": "#29798E", "id": "AMOTL1", "inherit_colors": false, "label": "AMOTL1", "shape": "dot"}, {"color": "#443982", "id": "USP22", "inherit_colors": false, "label": "USP22", "shape": "dot"}, {"color": "#29798E", "id": "MKNK2", "inherit_colors": false, "label": "MKNK2", "shape": "dot"}, {"color": "#443982", "id": "ENSG00000266830", "inherit_colors": false, "label": "ENSG00000266830", "shape": "dot"}, {"color": "#23898D", "id": "hsa-miR-503-3p", "inherit_colors": false, "label": "hsa-miR-503-3p", "shape": "dot"}, {"color": "#471265", "id": "SZRD1", "inherit_colors": false, "label": "SZRD1", "shape": "dot"}, {"color": "#31658D", "id": "RAD54L2", "inherit_colors": false, "label": "RAD54L2", "shape": "dot"}, {"color": "#39B976", "id": "RNPEPL1", "inherit_colors": false, "label": "RNPEPL1", "shape": "dot"}, {"color": "#29798E", "id": "ZNF512B", "inherit_colors": false, "label": "ZNF512B", "shape": "dot"}, {"color": "#218C8D", "id": "GLIS2", "inherit_colors": false, "label": "GLIS2", "shape": "dot"}, {"color": "#29798E", "id": "ZNF592", "inherit_colors": false, "label": "ZNF592", "shape": "dot"}, {"color": "#31658D", "id": "BCL2L2", "inherit_colors": false, "label": "BCL2L2", "shape": "dot"}, {"color": "#25838D", "id": "erucoylcarnitine (C22:1)*", "inherit_colors": false, "label": "erucoylcarnitine (C22:1)*", "shape": "dot"}, {"color": "#29798E", "id": "C15orf39", "inherit_colors": false, "label": "C15orf39", "shape": "dot"}, {"color": "#1E988A", "id": "CMTM4", "inherit_colors": false, "label": "CMTM4", "shape": "dot"}, {"color": "#29798E", "id": "PCNX3", "inherit_colors": false, "label": "PCNX3", "shape": "dot"}, {"color": "#FDE724", "id": "hsa-miR-600", "inherit_colors": false, "label": "hsa-miR-600", "shape": "dot"}, {"color": "#228A8D", "id": "ENSG00000279806", "inherit_colors": false, "label": "ENSG00000279806", "shape": "dot"}, {"color": "#443982", "id": "SLC39A13", "inherit_colors": false, "label": "SLC39A13", "shape": "dot"}, {"color": "#31658D", "id": "CES2", "inherit_colors": false, "label": "CES2", "shape": "dot"}, {"color": "#29798E", "id": "CCDC69", "inherit_colors": false, "label": "CCDC69", "shape": "dot"}, {"color": "#29798E", "id": "LIMK1", "inherit_colors": false, "label": "LIMK1", "shape": "dot"}, {"color": "#228A8D", "id": "REXO1", "inherit_colors": false, "label": "REXO1", "shape": "dot"}, {"color": "#23878D", "id": "1-carboxyethylhistidine", "inherit_colors": false, "label": "1-carboxyethylhistidine", "shape": "dot"}, {"color": "#443982", "id": "ATXN7L3", "inherit_colors": false, "label": "ATXN7L3", "shape": "dot"}, {"color": "#24AA82", "id": "FAM102A", "inherit_colors": false, "label": "FAM102A", "shape": "dot"}, {"color": "#443982", "id": "C11orf68", "inherit_colors": false, "label": "C11orf68", "shape": "dot"}, {"color": "#29798E", "id": "DAB2IP", "inherit_colors": false, "label": "DAB2IP", "shape": "dot"}, {"color": "#228A8D", "id": "BAP1", "inherit_colors": false, "label": "BAP1", "shape": "dot"}, {"color": "#443982", "id": "ZBED1", "inherit_colors": false, "label": "ZBED1", "shape": "dot"}, {"color": "#440154", "id": "hsa-miR-200c-5p", "inherit_colors": false, "label": "hsa-miR-200c-5p", "shape": "dot"}, {"color": "#287A8E", "id": "1-carboxyethyltyrosine", "inherit_colors": false, "label": "1-carboxyethyltyrosine", "shape": "dot"}, {"color": "#218D8C", "id": "TMEM164", "inherit_colors": false, "label": "TMEM164", "shape": "dot"}, {"color": "#31658D", "id": "MAFG", "inherit_colors": false, "label": "MAFG", "shape": "dot"}, {"color": "#228A8D", "id": "STK35", "inherit_colors": false, "label": "STK35", "shape": "dot"}, {"color": "#1EA087", "id": "SYT12", "inherit_colors": false, "label": "SYT12", "shape": "dot"}, {"color": "#228A8D", "id": "IP6K1", "inherit_colors": false, "label": "IP6K1", "shape": "dot"}, {"color": "#228A8D", "id": "CBX7", "inherit_colors": false, "label": "CBX7", "shape": "dot"}, {"color": "#31658D", "id": "CASTOR2", "inherit_colors": false, "label": "CASTOR2", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"color": "#DC143C", "from": "1-carboxyethylphenylalanine", "inherit_colors": false, "to": "CMTM4"}, {"color": "#DC143C", "from": "1-carboxyethylphenylalanine", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "TBC1D25", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#4169E1", "from": "IRAK1", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "IRAK1", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#DC143C", "from": "X-25856", "inherit_colors": false, "to": "CMTM4"}, {"color": "#DC143C", "from": "X-25856", "inherit_colors": false, "to": "hsa-miR-302b-5p"}, {"color": "#DC143C", "from": "X-25856", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "RAB11FIP5", "inherit_colors": false, "to": "behenoylcarnitine (C22)*"}, {"color": "#4169E1", "from": "RAB11FIP5", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "NIBAN2", "inherit_colors": false, "to": "hsa-miR-548h-3p"}, {"color": "#DC143C", "from": "X-11979", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "X-11979", "inherit_colors": false, "to": "hsa-miR-302b-5p"}, {"color": "#DC143C", "from": "X-11979", "inherit_colors": false, "to": "SOCS7"}, {"color": "#4169E1", "from": "TMEM129", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#DC143C", "from": "KMT2D", "inherit_colors": false, "to": "behenoylcarnitine (C22)*"}, {"color": "#DC143C", "from": "TINCR", "inherit_colors": false, "to": "behenoylcarnitine (C22)*"}, {"color": "#4169E1", "from": "TINCR", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "TINCR", "inherit_colors": false, "to": "nervonoylcarnitine (C24:1)*"}, {"color": "#4169E1", "from": "NF2", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#4169E1", "from": "ADAM19", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "TRAF3", "inherit_colors": false, "to": "1-carboxyethylhistidine"}, {"color": "#DC143C", "from": "TRAF3", "inherit_colors": false, "to": "behenoylcarnitine (C22)*"}, {"color": "#DC143C", "from": "TRAF3", "inherit_colors": false, "to": "nervonoylcarnitine (C24:1)*"}, {"color": "#DC143C", "from": "TRAF3", "inherit_colors": false, "to": "erucoylcarnitine (C22:1)*"}, {"color": "#DC143C", "from": "hsa-miR-302b-5p", "inherit_colors": false, "to": "erucoylcarnitine (C22:1)*"}, {"color": "#DC143C", "from": "hsa-miR-302b-5p", "inherit_colors": false, "to": "X-25936"}, {"color": "#4169E1", "from": "hsa-miR-302b-5p", "inherit_colors": false, "to": "RAB30-DT"}, {"color": "#DC143C", "from": "hsa-miR-302b-5p", "inherit_colors": false, "to": "1-carboxyethylhistidine"}, {"color": "#DC143C", "from": "hsa-miR-302b-5p", "inherit_colors": false, "to": "behenoylcarnitine (C22)*"}, {"color": "#DC143C", "from": "hsa-miR-302b-5p", "inherit_colors": false, "to": "nervonoylcarnitine (C24:1)*"}, {"color": "#DC143C", "from": "LINC02035", "inherit_colors": false, "to": "behenoylcarnitine (C22)*"}, {"color": "#DC143C", "from": "LINC02035", "inherit_colors": false, "to": "nervonoylcarnitine (C24:1)*"}, {"color": "#DC143C", "from": "RBSN", "inherit_colors": false, "to": "behenoylcarnitine (C22)*"}, {"color": "#DC143C", "from": "docosadienoylcarnitine (C22:2)*", "inherit_colors": false, "to": "CMTM4"}, {"color": "#DC143C", "from": "docosadienoylcarnitine (C22:2)*", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "DNAJC5", "inherit_colors": false, "to": "1-carboxyethylhistidine"}, {"color": "#DC143C", "from": "DNAJC5", "inherit_colors": false, "to": "behenoylcarnitine (C22)*"}, {"color": "#4169E1", "from": "DNAJC5", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "POLR3H", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "POLR3H", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#DC143C", "from": "SOCS7", "inherit_colors": false, "to": "1-carboxyethylhistidine"}, {"color": "#DC143C", "from": "SOCS7", "inherit_colors": false, "to": "behenoylcarnitine (C22)*"}, {"color": "#4169E1", "from": "SOCS7", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "OPA3", "inherit_colors": false, "to": "behenoylcarnitine (C22)*"}, {"color": "#4169E1", "from": "OPA3", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "MAFG"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "BLTP2"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "RNPEPL1"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "CMTM4"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "RAD54L2"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "KHNYN"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "IP6K1"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "CES2"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "PSKH1"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "BAP1"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "CASTOR2"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "ANKRD52"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "CBX7"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "BCL2L2"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "TMEM164"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "CTDSP2"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "GLIS2"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "ENSG00000279806"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "STK35"}, {"color": "#DC143C", "from": "behenoylcarnitine (C22)*", "inherit_colors": false, "to": "REXO1"}, {"color": "#4169E1", "from": "PSD4", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#4169E1", "from": "KIAA1522", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "ELK1", "inherit_colors": false, "to": "hsa-miR-548h-3p"}, {"color": "#4169E1", "from": "ELK1", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#4169E1", "from": "ELK1", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "PLPP3", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#4169E1", "from": "CTDSP2", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "LINC00641", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "arachidoylcarnitine (C20)*", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "arachidoylcarnitine (C20)*", "inherit_colors": false, "to": "CMTM4"}, {"color": "#4169E1", "from": "PSKH1", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "PSKH1", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#4169E1", "from": "CIC", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "BLTP2", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "hsa-miR-548h-3p", "inherit_colors": false, "to": "SZRD1"}, {"color": "#4169E1", "from": "hsa-miR-548h-3p", "inherit_colors": false, "to": "FAM102A"}, {"color": "#4169E1", "from": "AP5S1", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#DC143C", "from": "1-carboxyethylvaline", "inherit_colors": false, "to": "CMTM4"}, {"color": "#DC143C", "from": "1-carboxyethylvaline", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "nervonoylcarnitine (C24:1)*", "inherit_colors": false, "to": "CMTM4"}, {"color": "#DC143C", "from": "nervonoylcarnitine (C24:1)*", "inherit_colors": false, "to": "TMEM164"}, {"color": "#DC143C", "from": "nervonoylcarnitine (C24:1)*", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "nervonoylcarnitine (C24:1)*", "inherit_colors": false, "to": "GLIS2"}, {"color": "#4169E1", "from": "RHOD", "inherit_colors": false, "to": "hsa-miR-200c-5p"}, {"color": "#4169E1", "from": "RHOD", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#4169E1", "from": "AMOTL1", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "USP22", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#4169E1", "from": "MKNK2", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "ENSG00000266830", "inherit_colors": false, "to": "hsa-miR-503-3p"}, {"color": "#4169E1", "from": "hsa-miR-503-3p", "inherit_colors": false, "to": "ATXN7L3"}, {"color": "#4169E1", "from": "hsa-miR-503-3p", "inherit_colors": false, "to": "RNPEPL1"}, {"color": "#4169E1", "from": "hsa-miR-503-3p", "inherit_colors": false, "to": "C11orf68"}, {"color": "#4169E1", "from": "hsa-miR-503-3p", "inherit_colors": false, "to": "SLC39A13"}, {"color": "#4169E1", "from": "hsa-miR-503-3p", "inherit_colors": false, "to": "SYT12"}, {"color": "#4169E1", "from": "hsa-miR-503-3p", "inherit_colors": false, "to": "ZBED1"}, {"color": "#4169E1", "from": "hsa-miR-503-3p", "inherit_colors": false, "to": "FAM102A"}, {"color": "#4169E1", "from": "RNPEPL1", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "ZNF512B", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "GLIS2", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "ZNF592", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "erucoylcarnitine (C22:1)*", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "erucoylcarnitine (C22:1)*", "inherit_colors": false, "to": "CMTM4"}, {"color": "#4169E1", "from": "C15orf39", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "CMTM4", "inherit_colors": false, "to": "1-carboxyethylhistidine"}, {"color": "#4169E1", "from": "CMTM4", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#DC143C", "from": "CMTM4", "inherit_colors": false, "to": "1-carboxyethyltyrosine"}, {"color": "#4169E1", "from": "PCNX3", "inherit_colors": false, "to": "hsa-miR-600"}, {"color": "#4169E1", "from": "hsa-miR-600", "inherit_colors": false, "to": "REXO1"}, {"color": "#DC143C", "from": "hsa-miR-600", "inherit_colors": false, "to": "1-carboxyethylhistidine"}, {"color": "#4169E1", "from": "hsa-miR-600", "inherit_colors": false, "to": "STK35"}, {"color": "#DC143C", "from": "hsa-miR-600", "inherit_colors": false, "to": "1-carboxyethyltyrosine"}, {"color": "#4169E1", "from": "hsa-miR-600", "inherit_colors": false, "to": "SYT12"}, {"color": "#4169E1", "from": "hsa-miR-600", "inherit_colors": false, "to": "CCDC69"}, {"color": "#4169E1", "from": "hsa-miR-600", "inherit_colors": false, "to": "IP6K1"}, {"color": "#4169E1", "from": "hsa-miR-600", "inherit_colors": false, "to": "FAM102A"}, {"color": "#4169E1", "from": "hsa-miR-600", "inherit_colors": false, "to": "BAP1"}, {"color": "#4169E1", "from": "hsa-miR-600", "inherit_colors": false, "to": "CBX7"}, {"color": "#4169E1", "from": "hsa-miR-600", "inherit_colors": false, "to": "TMEM164"}, {"color": "#4169E1", "from": "hsa-miR-600", "inherit_colors": false, "to": "LIMK1"}, {"color": "#4169E1", "from": "hsa-miR-600", "inherit_colors": false, "to": "DAB2IP"}, {"color": "#4169E1", "from": "hsa-miR-600", "inherit_colors": false, "to": "ENSG00000279806"}, {"color": "#DC143C", "from": "1-carboxyethylhistidine", "inherit_colors": false, "to": "TMEM164"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": false,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

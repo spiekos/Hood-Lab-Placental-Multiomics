@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1500px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#25838D", "id": "C1QA", "inherit_colors": false, "label": "C1QA", "shape": "dot"}, {"color": "#25838D", "id": "PARD3B", "inherit_colors": false, "label": "PARD3B", "shape": "dot"}, {"color": "#25838D", "id": "TRAF4", "inherit_colors": false, "label": "TRAF4", "shape": "dot"}, {"color": "#345E8D", "id": "hsa-miR-497-5p", "inherit_colors": false, "label": "hsa-miR-497-5p", "shape": "dot"}, {"color": "#25838D", "id": "IGFBP7", "inherit_colors": false, "label": "IGFBP7", "shape": "dot"}, {"color": "#25838D", "id": "HAPLN1", "inherit_colors": false, "label": "HAPLN1", "shape": "dot"}, {"color": "#24AA82", "id": "BMP7", "inherit_colors": false, "label": "BMP7", "shape": "dot"}, {"color": "#25838D", "id": "HEYL", "inherit_colors": false, "label": "HEYL", "shape": "dot"}, {"color": "#24868D", "id": "NNMT", "inherit_colors": false, "label": "NNMT", "shape": "dot"}, {"color": "#24AA82", "id": "CYSTM1", "inherit_colors": false, "label": "CYSTM1", "shape": "dot"}, {"color": "#25838D", "id": "RNF130", "inherit_colors": false, "label": "RNF130", "shape": "dot"}, {"color": "#25838D", "id": "SPARC", "inherit_colors": false, "label": "SPARC", "shape": "dot"}, {"color": "#25838D", "id": "GJC1", "inherit_colors": false, "label": "GJC1", "shape": "dot"}, {"color": "#3D4A89", "id": "CALM3", "inherit_colors": false, "label": "CALM3", "shape": "dot"}, {"color": "#25838D", "id": "LGALS1", "inherit_colors": false, "label": "LGALS1", "shape": "dot"}, {"color": "#25838D", "id": "EGFLAM", "inherit_colors": false, "label": "EGFLAM", "shape": "dot"}, {"color": "#24868D", "id": "SPON1", "inherit_colors": false, "label": "SPON1", "shape": "dot"}, {"color": "#440154", "id": "RNF128", "inherit_colors": false, "label": "RNF128", "shape": "dot"}, {"color": "#24868D", "id": "EGFL6", "inherit_colors": false, "label": "EGFL6", "shape": "dot"}, {"color": "#24AA82", "id": "P3H2", "inherit_colors": false, "label": "P3H2", "shape": "dot"}, {"color": "#365B8C", "id": "hsa-miR-675-5p", "inherit_colors": false, "label": "hsa-miR-675-5p", "shape": "dot"}, {"color": "#33608D", "id": "hsa-miR-378a-5p", "inherit_colors": false, "label": "hsa-miR-378a-5p", "shape": "dot"}, {"color": "#25838D", "id": "APCDD1", "inherit_colors": false, "label": "APCDD1", "shape": "dot"}, {"color": "#25838D", "id": "MSRB3", "inherit_colors": false, "label": "MSRB3", "shape": "dot"}, {"color": "#3D4A89", "id": "ASB2", "inherit_colors": false, "label": "ASB2", "shape": "dot"}, {"color": "#3D4A89", "id": "MPP1", "inherit_colors": false, "label": "MPP1", "shape": "dot"}, {"color": "#25838D", "id": "PLA2G5", "inherit_colors": false, "label": "PLA2G5", "shape": "dot"}, {"color": "#25838D", "id": "DLK1", "inherit_colors": false, "label": "DLK1", "shape": "dot"}, {"color": "#462F7C", "id": "C1QC", "inherit_colors": false, "label": "C1QC", "shape": "dot"}, {"color": "#3D4A89", "id": "ABCB1", "inherit_colors": false, "label": "ABCB1", "shape": "dot"}, {"color": "#25838D", "id": "TRAF7", "inherit_colors": false, "label": "TRAF7", "shape": "dot"}, {"color": "#25838D", "id": "VSIG4", "inherit_colors": false, "label": "VSIG4", "shape": "dot"}, {"color": "#3D4A89", "id": "ASS1", "inherit_colors": false, "label": "ASS1", "shape": "dot"}, {"color": "#3D4A89", "id": "SLC13A4", "inherit_colors": false, "label": "SLC13A4", "shape": "dot"}, {"color": "#25838D", "id": "EFEMP2", "inherit_colors": false, "label": "EFEMP2", "shape": "dot"}, {"color": "#24AA82", "id": "ANKH", "inherit_colors": false, "label": "ANKH", "shape": "dot"}, {"color": "#25838D", "id": "RFX5", "inherit_colors": false, "label": "RFX5", "shape": "dot"}, {"color": "#25838D", "id": "COL5A3", "inherit_colors": false, "label": "COL5A3", "shape": "dot"}, {"color": "#25838D", "id": "COL6A2", "inherit_colors": false, "label": "COL6A2", "shape": "dot"}, {"color": "#25838D", "id": "COL5A2", "inherit_colors": false, "label": "COL5A2", "shape": "dot"}, {"color": "#3D4A89", "id": "BEX3", "inherit_colors": false, "label": "BEX3", "shape": "dot"}, {"color": "#25838D", "id": "PLA2G15", "inherit_colors": false, "label": "PLA2G15", "shape": "dot"}, {"color": "#25838D", "id": "EMILIN2", "inherit_colors": false, "label": "EMILIN2", "shape": "dot"}, {"color": "#25838D", "id": "TMEM100", "inherit_colors": false, "label": "TMEM100", "shape": "dot"}, {"color": "#3B518A", "id": "ALDH4A1", "inherit_colors": false, "label": "ALDH4A1", "shape": "dot"}, {"color": "#3D4A89", "id": "SLCO2B1", "inherit_colors": false, "label": "SLCO2B1", "shape": "dot"}, {"color": "#3D4A89", "id": "TCAF1P1", "inherit_colors": false, "label": "TCAF1P1", "shape": "dot"}, {"color": "#24AA82", "id": "CYB5A", "inherit_colors": false, "label": "CYB5A", "shape": "dot"}, {"color": "#25838D", "id": "ID3", "inherit_colors": false, "label": "ID3", "shape": "dot"}, {"color": "#25838D", "id": "GAS6", "inherit_colors": false, "label": "GAS6", "shape": "dot"}, {"color": "#25838D", "id": "AP1S2", "inherit_colors": false, "label": "AP1S2", "shape": "dot"}, {"color": "#32638D", "id": "hsa-miR-21-3p", "inherit_colors": false, "label": "hsa-miR-21-3p", "shape": "dot"}, {"color": "#25838D", "id": "TGFBR2", "inherit_colors": false, "label": "TGFBR2", "shape": "dot"}, {"color": "#25838D", "id": "F13A1", "inherit_colors": false, "label": "F13A1", "shape": "dot"}, {"color": "#25838D", "id": "RFTN1", "inherit_colors": false, "label": "RFTN1", "shape": "dot"}, {"color": "#25838D", "id": "MAGI3", "inherit_colors": false, "label": "MAGI3", "shape": "dot"}, {"color": "#24848D", "id": "PAMR1", "inherit_colors": false, "label": "PAMR1", "shape": "dot"}, {"color": "#25838D", "id": "NME4", "inherit_colors": false, "label": "NME4", "shape": "dot"}, {"color": "#30B47A", "id": "GATM", "inherit_colors": false, "label": "GATM", "shape": "dot"}, {"color": "#24868D", "id": "FUT4", "inherit_colors": false, "label": "FUT4", "shape": "dot"}, {"color": "#25838D", "id": "RASSF4", "inherit_colors": false, "label": "RASSF4", "shape": "dot"}, {"color": "#25838D", "id": "TMEM185B", "inherit_colors": false, "label": "TMEM185B", "shape": "dot"}, {"color": "#25838D", "id": "COL1A2", "inherit_colors": false, "label": "COL1A2", "shape": "dot"}, {"color": "#2BB17D", "id": "TRPC6", "inherit_colors": false, "label": "TRPC6", "shape": "dot"}, {"color": "#3D4A89", "id": "IDH1", "inherit_colors": false, "label": "IDH1", "shape": "dot"}, {"color": "#25838D", "id": "KCNK3", "inherit_colors": false, "label": "KCNK3", "shape": "dot"}, {"color": "#25838D", "id": "SDC2", "inherit_colors": false, "label": "SDC2", "shape": "dot"}, {"color": "#25838D", "id": "MRI1", "inherit_colors": false, "label": "MRI1", "shape": "dot"}, {"color": "#25838D", "id": "RAB11FIP3", "inherit_colors": false, "label": "RAB11FIP3", "shape": "dot"}, {"color": "#26AC81", "id": "ITGB5", "inherit_colors": false, "label": "ITGB5", "shape": "dot"}, {"color": "#25838D", "id": "BIN1", "inherit_colors": false, "label": "BIN1", "shape": "dot"}, {"color": "#25838D", "id": "ARMC6", "inherit_colors": false, "label": "ARMC6", "shape": "dot"}, {"color": "#440154", "id": "DHCR7", "inherit_colors": false, "label": "DHCR7", "shape": "dot"}, {"color": "#440154", "id": "OTUB2", "inherit_colors": false, "label": "OTUB2", "shape": "dot"}, {"color": "#25838D", "id": "MOCS1", "inherit_colors": false, "label": "MOCS1", "shape": "dot"}, {"color": "#25838D", "id": "ZFTA", "inherit_colors": false, "label": "ZFTA", "shape": "dot"}, {"color": "#3D4A89", "id": "IGDCC3", "inherit_colors": false, "label": "IGDCC3", "shape": "dot"}, {"color": "#24AA82", "id": "XKR8", "inherit_colors": false, "label": "XKR8", "shape": "dot"}, {"color": "#25838D", "id": "ARHGAP4", "inherit_colors": false, "label": "ARHGAP4", "shape": "dot"}, {"color": "#25838D", "id": "TLNRD1", "inherit_colors": false, "label": "TLNRD1", "shape": "dot"}, {"color": "#24AA82", "id": "PPP1R14A", "inherit_colors": false, "label": "PPP1R14A", "shape": "dot"}, {"color": "#25838D", "id": "IGFBP2", "inherit_colors": false, "label": "IGFBP2", "shape": "dot"}, {"color": "#25838D", "id": "SIPA1", "inherit_colors": false, "label": "SIPA1", "shape": "dot"}, {"color": "#440154", "id": "GSTA3", "inherit_colors": false, "label": "GSTA3", "shape": "dot"}, {"color": "#25838D", "id": "TMSB10", "inherit_colors": false, "label": "TMSB10", "shape": "dot"}, {"color": "#25838D", "id": "EHD4", "inherit_colors": false, "label": "EHD4", "shape": "dot"}, {"color": "#24868D", "id": "CMKLR1", "inherit_colors": false, "label": "CMKLR1", "shape": "dot"}, {"color": "#3D4A89", "id": "GSTK1", "inherit_colors": false, "label": "GSTK1", "shape": "dot"}, {"color": "#25838D", "id": "NEDD4L", "inherit_colors": false, "label": "NEDD4L", "shape": "dot"}, {"color": "#472575", "id": "hsa-miR-3614-5p", "inherit_colors": false, "label": "hsa-miR-3614-5p", "shape": "dot"}, {"color": "#3D4A89", "id": "HS6ST2", "inherit_colors": false, "label": "HS6ST2", "shape": "dot"}, {"color": "#25838D", "id": "MRAS", "inherit_colors": false, "label": "MRAS", "shape": "dot"}, {"color": "#25838D", "id": "COL6A3", "inherit_colors": false, "label": "COL6A3", "shape": "dot"}, {"color": "#25838D", "id": "MAGED2", "inherit_colors": false, "label": "MAGED2", "shape": "dot"}, {"color": "#25838D", "id": "CD4", "inherit_colors": false, "label": "CD4", "shape": "dot"}, {"color": "#25838D", "id": "NR2F1", "inherit_colors": false, "label": "NR2F1", "shape": "dot"}, {"color": "#25838D", "id": "RNASE1", "inherit_colors": false, "label": "RNASE1", "shape": "dot"}, {"color": "#26AC81", "id": "TBX4", "inherit_colors": false, "label": "TBX4", "shape": "dot"}, {"color": "#440154", "id": "HSD17B1", "inherit_colors": false, "label": "HSD17B1", "shape": "dot"}, {"color": "#3D4A89", "id": "ITGA9", "inherit_colors": false, "label": "ITGA9", "shape": "dot"}, {"color": "#25838D", "id": "FMOD", "inherit_colors": false, "label": "FMOD", "shape": "dot"}, {"color": "#25838D", "id": "AFAP1L2", "inherit_colors": false, "label": "AFAP1L2", "shape": "dot"}, {"color": "#24AA82", "id": "NDUFA4L2", "inherit_colors": false, "label": "NDUFA4L2", "shape": "dot"}, {"color": "#462D7C", "id": "PDLIM3", "inherit_colors": false, "label": "PDLIM3", "shape": "dot"}, {"color": "#24AA82", "id": "GAS2L3", "inherit_colors": false, "label": "GAS2L3", "shape": "dot"}, {"color": "#25838D", "id": "CRTAP", "inherit_colors": false, "label": "CRTAP", "shape": "dot"}, {"color": "#FDE724", "id": "hsa-miR-196b-5p", "inherit_colors": false, "label": "hsa-miR-196b-5p", "shape": "dot"}, {"color": "#25838D", "id": "SERPINF1", "inherit_colors": false, "label": "SERPINF1", "shape": "dot"}, {"color": "#25838D", "id": "P2RY1", "inherit_colors": false, "label": "P2RY1", "shape": "dot"}, {"color": "#31648D", "id": "hsa-miR-496", "inherit_colors": false, "label": "hsa-miR-496", "shape": "dot"}, {"color": "#25838D", "id": "LLGL1", "inherit_colors": false, "label": "LLGL1", "shape": "dot"}, {"color": "#25838D", "id": "AXIN2", "inherit_colors": false, "label": "AXIN2", "shape": "dot"}, {"color": "#218E8C", "id": "hsa-miR-551b-3p", "inherit_colors": false, "label": "hsa-miR-551b-3p", "shape": "dot"}, {"color": "#25838D", "id": "FAM162B", "inherit_colors": false, "label": "FAM162B", "shape": "dot"}, {"color": "#440154", "id": "CD320", "inherit_colors": false, "label": "CD320", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"color": "#4169E1", "from": "C1QA", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "PARD3B", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "TRAF4", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "hsa-miR-497-5p", "inherit_colors": false, "to": "TRPC6"}, {"color": "#4169E1", "from": "hsa-miR-497-5p", "inherit_colors": false, "to": "PAMR1"}, {"color": "#4169E1", "from": "IGFBP7", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "HAPLN1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "BMP7", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "BMP7", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "HEYL", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "NNMT", "inherit_colors": false, "to": "hsa-miR-21-3p"}, {"color": "#4169E1", "from": "NNMT", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "CYSTM1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "CYSTM1", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "RNF130", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "SPARC", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "GJC1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "CALM3", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "LGALS1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "EGFLAM", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "SPON1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "SPON1", "inherit_colors": false, "to": "hsa-miR-496"}, {"color": "#4169E1", "from": "RNF128", "inherit_colors": false, "to": "hsa-miR-3614-5p"}, {"color": "#4169E1", "from": "EGFL6", "inherit_colors": false, "to": "hsa-miR-496"}, {"color": "#4169E1", "from": "EGFL6", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "P3H2", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "P3H2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "hsa-miR-675-5p", "inherit_colors": false, "to": "ITGB5"}, {"color": "#4169E1", "from": "hsa-miR-378a-5p", "inherit_colors": false, "to": "TBX4"}, {"color": "#4169E1", "from": "hsa-miR-378a-5p", "inherit_colors": false, "to": "GATM"}, {"color": "#4169E1", "from": "APCDD1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "MSRB3", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "ASB2", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "MPP1", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "PLA2G5", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "DLK1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "C1QC", "inherit_colors": false, "to": "hsa-miR-496"}, {"color": "#4169E1", "from": "ABCB1", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "TRAF7", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "VSIG4", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "ASS1", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "SLC13A4", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "EFEMP2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "ANKH", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "ANKH", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "RFX5", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "COL5A3", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "COL6A2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "COL5A2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "BEX3", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "PLA2G15", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "EMILIN2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "TMEM100", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "ALDH4A1", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "ALDH4A1", "inherit_colors": false, "to": "hsa-miR-3614-5p"}, {"color": "#4169E1", "from": "SLCO2B1", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "TCAF1P1", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "CYB5A", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "CYB5A", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "ID3", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "GAS6", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "AP1S2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "hsa-miR-21-3p", "inherit_colors": false, "to": "TRPC6"}, {"color": "#4169E1", "from": "hsa-miR-21-3p", "inherit_colors": false, "to": "GATM"}, {"color": "#4169E1", "from": "hsa-miR-21-3p", "inherit_colors": false, "to": "PDLIM3"}, {"color": "#4169E1", "from": "TGFBR2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "F13A1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "RFTN1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "MAGI3", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "PAMR1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "NME4", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "GATM", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "GATM", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "GATM", "inherit_colors": false, "to": "hsa-miR-496"}, {"color": "#4169E1", "from": "FUT4", "inherit_colors": false, "to": "hsa-miR-496"}, {"color": "#4169E1", "from": "FUT4", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "RASSF4", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "TMEM185B", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "COL1A2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "TRPC6", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "TRPC6", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "IDH1", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "KCNK3", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "SDC2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "MRI1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "RAB11FIP3", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "ITGB5", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "ITGB5", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "BIN1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "ARMC6", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "DHCR7", "inherit_colors": false, "to": "hsa-miR-3614-5p"}, {"color": "#4169E1", "from": "OTUB2", "inherit_colors": false, "to": "hsa-miR-3614-5p"}, {"color": "#4169E1", "from": "MOCS1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "ZFTA", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "IGDCC3", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "XKR8", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "XKR8", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "ARHGAP4", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "TLNRD1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "PPP1R14A", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "PPP1R14A", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "IGFBP2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "SIPA1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "GSTA3", "inherit_colors": false, "to": "hsa-miR-3614-5p"}, {"color": "#4169E1", "from": "TMSB10", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "EHD4", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "CMKLR1", "inherit_colors": false, "to": "hsa-miR-496"}, {"color": "#4169E1", "from": "CMKLR1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "GSTK1", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "NEDD4L", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "hsa-miR-3614-5p", "inherit_colors": false, "to": "CD320"}, {"color": "#4169E1", "from": "hsa-miR-3614-5p", "inherit_colors": false, "to": "HSD17B1"}, {"color": "#4169E1", "from": "HS6ST2", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "MRAS", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "COL6A3", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "MAGED2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "CD4", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "NR2F1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "RNASE1", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "TBX4", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "TBX4", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "ITGA9", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "FMOD", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "AFAP1L2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "NDUFA4L2", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "NDUFA4L2", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "GAS2L3", "inherit_colors": false, "to": "hsa-miR-551b-3p"}, {"color": "#4169E1", "from": "GAS2L3", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "CRTAP", "inherit_colors": false, "to": "hsa-miR-196b-5p"}, {"color": "#4169E1", "from": "hsa-miR-196b-5p", "inherit_colors": false, "to": "LLGL1"}, {"color": "#4169E1", "from": "hsa-miR-196b-5p", "inherit_colors": false, "to": "SERPINF1"}, {"color": "#4169E1", "from": "hsa-miR-196b-5p", "inherit_colors": false, "to": "P2RY1"}, {"color": "#4169E1", "from": "hsa-miR-196b-5p", "inherit_colors": false, "to": "FAM162B"}, {"color": "#4169E1", "from": "hsa-miR-196b-5p", "inherit_colors": false, "to": "AXIN2"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": false,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
