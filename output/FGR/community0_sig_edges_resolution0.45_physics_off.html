@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1500px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#453580", "id": "MALAT1", "inherit_colors": false, "label": "MALAT1", "shape": "dot"}, {"color": "#453580", "id": "(3\u0027-5\u0027)-adenylyladenosine*", "inherit_colors": false, "label": "(3\u0027-5\u0027)-adenylyladenosine*", "shape": "dot"}, {"color": "#3A528B", "id": "TSC22D2", "inherit_colors": false, "label": "TSC22D2", "shape": "dot"}, {"color": "#67CC5C", "id": "(3\u0027-5\u0027)-adenylylcytidine", "inherit_colors": false, "label": "(3\u0027-5\u0027)-adenylylcytidine", "shape": "dot"}, {"color": "#67CC5C", "id": "ZBTB1", "inherit_colors": false, "label": "ZBTB1", "shape": "dot"}, {"color": "#453580", "id": "PRR12", "inherit_colors": false, "label": "PRR12", "shape": "dot"}, {"color": "#267F8E", "id": "(3\u0027-5\u0027)-adenylylguanosine*", "inherit_colors": false, "label": "(3\u0027-5\u0027)-adenylylguanosine*", "shape": "dot"}, {"color": "#3A528B", "id": "ENSG00000235859", "inherit_colors": false, "label": "ENSG00000235859", "shape": "dot"}, {"color": "#440154", "id": "FAM219A", "inherit_colors": false, "label": "FAM219A", "shape": "dot"}, {"color": "#3A528B", "id": "PPP1R3E", "inherit_colors": false, "label": "PPP1R3E", "shape": "dot"}, {"color": "#FDE724", "id": "(3\u0027-5\u0027)-guanylylcytidine", "inherit_colors": false, "label": "(3\u0027-5\u0027)-guanylylcytidine", "shape": "dot"}, {"color": "#67CC5C", "id": "SMARCA1", "inherit_colors": false, "label": "SMARCA1", "shape": "dot"}, {"color": "#33608D", "id": "(3\u0027-5\u0027)-uridylyladenosine", "inherit_colors": false, "label": "(3\u0027-5\u0027)-uridylyladenosine", "shape": "dot"}, {"color": "#267F8E", "id": "MNT", "inherit_colors": false, "label": "MNT", "shape": "dot"}, {"color": "#3A528B", "id": "USP34", "inherit_colors": false, "label": "USP34", "shape": "dot"}, {"color": "#267F8E", "id": "BOD1L1", "inherit_colors": false, "label": "BOD1L1", "shape": "dot"}, {"color": "#20918C", "id": "CMYA5", "inherit_colors": false, "label": "CMYA5", "shape": "dot"}, {"color": "#67CC5C", "id": "ZBTB4", "inherit_colors": false, "label": "ZBTB4", "shape": "dot"}, {"color": "#20918C", "id": "ARID4A", "inherit_colors": false, "label": "ARID4A", "shape": "dot"}, {"color": "#440154", "id": "PLEKHG3", "inherit_colors": false, "label": "PLEKHG3", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"color": "#4169E1", "from": "MALAT1", "inherit_colors": false, "to": "(3\u0027-5\u0027)-adenylylcytidine"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylyladenosine*", "inherit_colors": false, "to": "ZBTB4"}, {"color": "#4169E1", "from": "TSC22D2", "inherit_colors": false, "to": "(3\u0027-5\u0027)-guanylylcytidine"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylylcytidine", "inherit_colors": false, "to": "ARID4A"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylylcytidine", "inherit_colors": false, "to": "MNT"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylylcytidine", "inherit_colors": false, "to": "PRR12"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylylcytidine", "inherit_colors": false, "to": "ZBTB4"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylylcytidine", "inherit_colors": false, "to": "SMARCA1"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylylcytidine", "inherit_colors": false, "to": "CMYA5"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylylcytidine", "inherit_colors": false, "to": "ZBTB1"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylylcytidine", "inherit_colors": false, "to": "BOD1L1"}, {"color": "#4169E1", "from": "ZBTB1", "inherit_colors": false, "to": "(3\u0027-5\u0027)-uridylyladenosine"}, {"color": "#4169E1", "from": "ZBTB1", "inherit_colors": false, "to": "(3\u0027-5\u0027)-adenylylguanosine*"}, {"color": "#4169E1", "from": "ZBTB1", "inherit_colors": false, "to": "(3\u0027-5\u0027)-guanylylcytidine"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylylguanosine*", "inherit_colors": false, "to": "ZBTB4"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylylguanosine*", "inherit_colors": false, "to": "SMARCA1"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylylguanosine*", "inherit_colors": false, "to": "PLEKHG3"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-adenylylguanosine*", "inherit_colors": false, "to": "FAM219A"}, {"color": "#4169E1", "from": "ENSG00000235859", "inherit_colors": false, "to": "(3\u0027-5\u0027)-guanylylcytidine"}, {"color": "#4169E1", "from": "PPP1R3E", "inherit_colors": false, "to": "(3\u0027-5\u0027)-guanylylcytidine"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-guanylylcytidine", "inherit_colors": false, "to": "USP34"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-guanylylcytidine", "inherit_colors": false, "to": "ARID4A"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-guanylylcytidine", "inherit_colors": false, "to": "MNT"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-guanylylcytidine", "inherit_colors": false, "to": "ZBTB4"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-guanylylcytidine", "inherit_colors": false, "to": "SMARCA1"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-guanylylcytidine", "inherit_colors": false, "to": "CMYA5"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-guanylylcytidine", "inherit_colors": false, "to": "BOD1L1"}, {"color": "#4169E1", "from": "SMARCA1", "inherit_colors": false, "to": "(3\u0027-5\u0027)-uridylyladenosine"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-uridylyladenosine", "inherit_colors": false, "to": "CMYA5"}, {"color": "#4169E1", "from": "(3\u0027-5\u0027)-uridylyladenosine", "inherit_colors": false, "to": "ARID4A"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": false,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
