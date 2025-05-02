@@ -2,7 +2,7 @@
 Goes from raw files provided by data processing companies like Metabolon and Olink and puts them in a standardized format ready for downstream processing and analyses.
 
 1. Clean patient clinical data for interomics analyses
-`python3 format_cohort_metadata.py ../data/Final_Cohort.csv ../data/metadata-final.csv`
+\n`python3 format_cohort_metadata.py ../data/Final_Cohort.csv ../data/metadata-final.csv`
 
 2. Clean miRNA data for interomics analyses
 `python3 clean_mirna_data.py ../data/TranscriptSampleInformation.csv ../data/mini-DP3_miRNA_rds.csv ../data/mirna-final.csv`
