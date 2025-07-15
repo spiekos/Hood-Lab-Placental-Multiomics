@@ -22,7 +22,7 @@ from rpy2.robjects.packages import importr
 rpy2.robjects.numpy2ri.activate()
 
 
-CUTOFF_PERCENT_MISSING = 0.25
+CUTOFF_PERCENT_MISSING = 0.20
 
 
 def count_missingness_group_distribution(df, protein, dict_group_count):
