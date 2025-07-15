@@ -1,0 +1,1201 @@
+Protein Failing Missingness Cutoff
+Group: Number of Samples Missing Protein Measurement (%)
+SLAMF7
+Total: 151 (44.0%)
+Control: 46 (40.71%)
+PTD: 40 (55.56%)
+Severe PE: 31 (41.33%)
+FGR: 12 (32.43%)
+Control PTD: 7 (43.75%)
+FGR+Hypertension: 15 (50.0%)
+p-value: 0.2288855572213893
+
+
+ADAM-TS13
+Total: 249 (72.6%)
+Control: 82 (72.57%)
+PTD: 59 (81.94%)
+Severe PE: 52 (69.33%)
+FGR: 21 (56.76%)
+Control PTD: 8 (50.0%)
+FGR+Hypertension: 27 (90.0%)
+p-value: 0.005497251374312844
+
+
+BOC
+Total: 276 (80.5%)
+Control: 94 (83.19%)
+PTD: 59 (81.94%)
+Severe PE: 61 (81.33%)
+FGR: 26 (70.27%)
+Control PTD: 9 (56.25%)
+FGR+Hypertension: 27 (90.0%)
+p-value: 0.0769615192403798
+
+
+IL-4RA
+Total: 101 (29.4%)
+Control: 33 (29.2%)
+PTD: 27 (37.5%)
+Severe PE: 22 (29.33%)
+FGR: 8 (21.62%)
+Control PTD: 3 (18.75%)
+FGR+Hypertension: 8 (26.67%)
+p-value: 0.5452273863068465
+
+
+IL1RL2
+Total: 293 (85.4%)
+Control: 95 (84.07%)
+PTD: 64 (88.89%)
+Severe PE: 63 (84.0%)
+FGR: 31 (83.78%)
+Control PTD: 12 (75.0%)
+FGR+Hypertension: 28 (93.33%)
+p-value: 0.5372313843078461
+
+
+GIF
+Total: 294 (85.7%)
+Control: 90 (79.65%)
+PTD: 65 (90.28%)
+Severe PE: 61 (81.33%)
+FGR: 35 (94.59%)
+Control PTD: 14 (87.5%)
+FGR+Hypertension: 29 (96.67%)
+p-value: 0.041979010494752625
+
+
+FGF-21
+Total: 325 (94.8%)
+Control: 111 (98.23%)
+PTD: 70 (97.22%)
+Severe PE: 62 (82.67%)
+FGR: 37 (100.0%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.0004997501249375312
+
+
+PIgR
+Total: 314 (91.5%)
+Control: 105 (92.92%)
+PTD: 66 (91.67%)
+Severe PE: 68 (90.67%)
+FGR: 33 (89.19%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 27 (90.0%)
+p-value: 0.9655172413793104
+
+
+FGF-23
+Total: 114 (33.2%)
+Control: 40 (35.4%)
+PTD: 30 (41.67%)
+Severe PE: 24 (32.0%)
+FGR: 7 (18.92%)
+Control PTD: 5 (31.25%)
+FGR+Hypertension: 8 (26.67%)
+p-value: 0.2723638180909545
+
+
+SERPINA12
+Total: 303 (88.3%)
+Control: 99 (87.61%)
+PTD: 62 (86.11%)
+Severe PE: 67 (89.33%)
+FGR: 34 (91.89%)
+Control PTD: 13 (81.25%)
+FGR+Hypertension: 28 (93.33%)
+p-value: 0.8025987006496752
+
+
+MERTK
+Total: 183 (53.4%)
+Control: 64 (56.64%)
+PTD: 48 (66.67%)
+Severe PE: 29 (38.67%)
+FGR: 17 (45.95%)
+Control PTD: 6 (37.5%)
+FGR+Hypertension: 19 (63.33%)
+p-value: 0.0069965017491254375
+
+
+KIM1
+Total: 231 (67.3%)
+Control: 80 (70.8%)
+PTD: 52 (72.22%)
+Severe PE: 43 (57.33%)
+FGR: 25 (67.57%)
+Control PTD: 14 (87.5%)
+FGR+Hypertension: 17 (56.67%)
+p-value: 0.09145427286356822
+
+
+VSIG2
+Total: 312 (91.0%)
+Control: 107 (94.69%)
+PTD: 60 (83.33%)
+Severe PE: 69 (92.0%)
+FGR: 37 (100.0%)
+Control PTD: 13 (81.25%)
+FGR+Hypertension: 26 (86.67%)
+p-value: 0.014992503748125937
+
+
+XCL1
+Total: 121 (35.3%)
+Control: 39 (34.51%)
+PTD: 31 (43.06%)
+Severe PE: 29 (38.67%)
+FGR: 10 (27.03%)
+Control PTD: 3 (18.75%)
+FGR+Hypertension: 9 (30.0%)
+p-value: 0.3458270864567716
+
+
+ITGB1BP2
+Total: 198 (57.7%)
+Control: 59 (52.21%)
+PTD: 37 (51.39%)
+Severe PE: 40 (53.33%)
+FGR: 30 (81.08%)
+Control PTD: 9 (56.25%)
+FGR+Hypertension: 23 (76.67%)
+p-value: 0.004997501249375313
+
+
+GDF-2
+Total: 87 (25.4%)
+Control: 22 (19.47%)
+PTD: 22 (30.56%)
+Severe PE: 15 (20.0%)
+FGR: 9 (24.32%)
+Control PTD: 2 (12.5%)
+FGR+Hypertension: 17 (56.67%)
+p-value: 0.001999000499750125
+
+
+FABP2
+Total: 258 (75.2%)
+Control: 86 (76.11%)
+PTD: 62 (86.11%)
+Severe PE: 48 (64.0%)
+FGR: 27 (72.97%)
+Control PTD: 9 (56.25%)
+FGR+Hypertension: 26 (86.67%)
+p-value: 0.012993503248375811
+
+
+THPO
+Total: 136 (39.7%)
+Control: 40 (35.4%)
+PTD: 32 (44.44%)
+Severe PE: 34 (45.33%)
+FGR: 8 (21.62%)
+Control PTD: 4 (25.0%)
+FGR+Hypertension: 18 (60.0%)
+p-value: 0.013993003498250875
+
+
+MARCO
+Total: 183 (53.4%)
+Control: 58 (51.33%)
+PTD: 47 (65.28%)
+Severe PE: 44 (58.67%)
+FGR: 13 (35.14%)
+Control PTD: 7 (43.75%)
+FGR+Hypertension: 14 (46.67%)
+p-value: 0.04997501249375312
+
+
+GT
+Total: 338 (98.5%)
+Control: 110 (97.35%)
+PTD: 71 (98.61%)
+Severe PE: 75 (100.0%)
+FGR: 37 (100.0%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.3613193403298351
+
+
+PD-L2
+Total: 291 (84.8%)
+Control: 97 (85.84%)
+PTD: 65 (90.28%)
+Severe PE: 62 (82.67%)
+FGR: 29 (78.38%)
+Control PTD: 11 (68.75%)
+FGR+Hypertension: 27 (90.0%)
+p-value: 0.2013993003498251
+
+
+TNFRSF13B
+Total: 140 (40.8%)
+Control: 43 (38.05%)
+PTD: 41 (56.94%)
+Severe PE: 22 (29.33%)
+FGR: 18 (48.65%)
+Control PTD: 3 (18.75%)
+FGR+Hypertension: 13 (43.33%)
+p-value: 0.005997001499250375
+
+
+LEP
+Total: 100 (29.2%)
+Control: 35 (30.97%)
+PTD: 28 (38.89%)
+Severe PE: 15 (20.0%)
+FGR: 10 (27.03%)
+Control PTD: 11 (68.75%)
+FGR+Hypertension: 1 (3.33%)
+p-value: 0.0004997501249375312
+
+
+CA5A
+Total: 268 (78.1%)
+Control: 88 (77.88%)
+PTD: 61 (84.72%)
+Severe PE: 59 (78.67%)
+FGR: 20 (54.05%)
+Control PTD: 10 (62.5%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.0009995002498750624
+
+
+HAOX1
+Total: 219 (63.8%)
+Control: 78 (69.03%)
+PTD: 49 (68.06%)
+Severe PE: 41 (54.67%)
+FGR: 24 (64.86%)
+Control PTD: 6 (37.5%)
+FGR+Hypertension: 21 (70.0%)
+p-value: 0.09095452273863068
+
+
+NT-proBNP
+Total: 324 (94.5%)
+Control: 113 (100.0%)
+PTD: 66 (91.67%)
+Severe PE: 70 (93.33%)
+FGR: 34 (91.89%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 25 (83.33%)
+p-value: 0.0024987506246876563
+
+
+TIMP4
+Total: 93 (27.1%)
+Control: 29 (25.66%)
+PTD: 34 (47.22%)
+Severe PE: 14 (18.67%)
+FGR: 5 (13.51%)
+Control PTD: 6 (37.5%)
+FGR+Hypertension: 5 (16.67%)
+p-value: 0.0009995002498750624
+
+
+CNTN1
+Total: 328 (95.6%)
+Control: 108 (95.58%)
+PTD: 71 (98.61%)
+Severe PE: 69 (92.0%)
+FGR: 36 (97.3%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 29 (96.67%)
+p-value: 0.4352823588205897
+
+
+SPON1
+Total: 137 (39.9%)
+Control: 38 (33.63%)
+PTD: 44 (61.11%)
+Severe PE: 28 (37.33%)
+FGR: 12 (32.43%)
+Control PTD: 2 (12.5%)
+FGR+Hypertension: 13 (43.33%)
+p-value: 0.0014992503748125937
+
+
+PSP-D
+Total: 343 (100.0%)
+Control: 113 (100.0%)
+PTD: 72 (100.0%)
+Severe PE: 75 (100.0%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 30 (100.0%)
+p-value:  1.0
+
+
+PI3
+Total: 337 (98.3%)
+Control: 109 (96.46%)
+PTD: 70 (97.22%)
+Severe PE: 75 (100.0%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.5227386306846576
+
+
+MMP-2
+Total: 298 (86.9%)
+Control: 96 (84.96%)
+PTD: 66 (91.67%)
+Severe PE: 65 (86.67%)
+FGR: 34 (91.89%)
+Control PTD: 12 (75.0%)
+FGR+Hypertension: 25 (83.33%)
+p-value: 0.383808095952024
+
+
+MB
+Total: 129 (37.6%)
+Control: 28 (24.78%)
+PTD: 41 (56.94%)
+Severe PE: 22 (29.33%)
+FGR: 15 (40.54%)
+Control PTD: 6 (37.5%)
+FGR+Hypertension: 17 (56.67%)
+p-value: 0.0009995002498750624
+
+
+PCSK9
+Total: 253 (73.8%)
+Control: 87 (76.99%)
+PTD: 58 (80.56%)
+Severe PE: 53 (70.67%)
+FGR: 25 (67.57%)
+Control PTD: 6 (37.5%)
+FGR+Hypertension: 24 (80.0%)
+p-value: 0.018490754622688656
+
+
+Gal-4
+Total: 252 (73.5%)
+Control: 85 (75.22%)
+PTD: 60 (83.33%)
+Severe PE: 50 (66.67%)
+FGR: 23 (62.16%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 18 (60.0%)
+p-value: 0.001999000499750125
+
+
+IL-1RT2
+Total: 235 (68.5%)
+Control: 87 (76.99%)
+PTD: 58 (80.56%)
+Severe PE: 40 (53.33%)
+FGR: 25 (67.57%)
+Control PTD: 13 (81.25%)
+FGR+Hypertension: 12 (40.0%)
+p-value: 0.0004997501249375312
+
+
+PON3
+Total: 343 (100.0%)
+Control: 113 (100.0%)
+PTD: 72 (100.0%)
+Severe PE: 75 (100.0%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 30 (100.0%)
+p-value:  1.0
+
+
+MMP-3
+Total: 272 (79.3%)
+Control: 99 (87.61%)
+PTD: 60 (83.33%)
+Severe PE: 57 (76.0%)
+FGR: 30 (81.08%)
+Control PTD: 13 (81.25%)
+FGR+Hypertension: 13 (43.33%)
+p-value: 0.0009995002498750624
+
+
+KLK6
+Total: 340 (99.1%)
+Control: 112 (99.12%)
+PTD: 72 (100.0%)
+Severe PE: 73 (97.33%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.767616191904048
+
+
+MEPE
+Total: 314 (91.5%)
+Control: 100 (88.5%)
+PTD: 70 (97.22%)
+Severe PE: 66 (88.0%)
+FGR: 35 (94.59%)
+Control PTD: 14 (87.5%)
+FGR+Hypertension: 29 (96.67%)
+p-value: 0.16141929035482258
+
+
+INHBC
+Total: 247 (72.0%)
+Control: 84 (74.34%)
+PTD: 60 (83.33%)
+Severe PE: 50 (66.67%)
+FGR: 24 (64.86%)
+Control PTD: 9 (56.25%)
+FGR+Hypertension: 20 (66.67%)
+p-value: 0.08045977011494253
+
+
+SPINK1
+Total: 319 (93.0%)
+Control: 110 (97.35%)
+PTD: 70 (97.22%)
+Severe PE: 61 (81.33%)
+FGR: 36 (97.3%)
+Control PTD: 14 (87.5%)
+FGR+Hypertension: 28 (93.33%)
+p-value: 0.001999000499750125
+
+
+COCH
+Total: 157 (45.8%)
+Control: 57 (50.44%)
+PTD: 36 (50.0%)
+Severe PE: 32 (42.67%)
+FGR: 18 (48.65%)
+Control PTD: 5 (31.25%)
+FGR+Hypertension: 9 (30.0%)
+p-value: 0.27586206896551724
+
+
+FCRL5
+Total: 321 (93.6%)
+Control: 109 (96.46%)
+PTD: 71 (98.61%)
+Severe PE: 70 (93.33%)
+FGR: 29 (78.38%)
+Control PTD: 14 (87.5%)
+FGR+Hypertension: 28 (93.33%)
+p-value: 0.001999000499750125
+
+
+CCL21
+Total: 283 (82.5%)
+Control: 99 (87.61%)
+PTD: 67 (93.06%)
+Severe PE: 57 (76.0%)
+FGR: 25 (67.57%)
+Control PTD: 13 (81.25%)
+FGR+Hypertension: 22 (73.33%)
+p-value: 0.001999000499750125
+
+
+BST1
+Total: 331 (96.5%)
+Control: 109 (96.46%)
+PTD: 72 (100.0%)
+Severe PE: 75 (100.0%)
+FGR: 32 (86.49%)
+Control PTD: 14 (87.5%)
+FGR+Hypertension: 29 (96.67%)
+p-value: 0.0004997501249375312
+
+
+CST6
+Total: 287 (83.7%)
+Control: 102 (90.27%)
+PTD: 65 (90.28%)
+Severe PE: 56 (74.67%)
+FGR: 32 (86.49%)
+Control PTD: 14 (87.5%)
+FGR+Hypertension: 18 (60.0%)
+p-value: 0.0014992503748125937
+
+
+MYOC
+Total: 239 (69.7%)
+Control: 84 (74.34%)
+PTD: 53 (73.61%)
+Severe PE: 50 (66.67%)
+FGR: 22 (59.46%)
+Control PTD: 7 (43.75%)
+FGR+Hypertension: 23 (76.67%)
+p-value: 0.10994502748625687
+
+
+CDON
+Total: 220 (64.1%)
+Control: 78 (69.03%)
+PTD: 52 (72.22%)
+Severe PE: 47 (62.67%)
+FGR: 22 (59.46%)
+Control PTD: 7 (43.75%)
+FGR+Hypertension: 14 (46.67%)
+p-value: 0.063968015992004
+
+
+CD109
+Total: 191 (55.7%)
+Control: 67 (59.29%)
+PTD: 43 (59.72%)
+Severe PE: 37 (49.33%)
+FGR: 17 (45.95%)
+Control PTD: 8 (50.0%)
+FGR+Hypertension: 19 (63.33%)
+p-value: 0.47126436781609193
+
+
+CA6
+Total: 239 (69.7%)
+Control: 80 (70.8%)
+PTD: 52 (72.22%)
+Severe PE: 50 (66.67%)
+FGR: 27 (72.97%)
+Control PTD: 7 (43.75%)
+FGR+Hypertension: 23 (76.67%)
+p-value: 0.2818590704647676
+
+
+FUT3/FUT5
+Total: 206 (60.1%)
+Control: 78 (69.03%)
+PTD: 48 (66.67%)
+Severe PE: 40 (53.33%)
+FGR: 20 (54.05%)
+Control PTD: 8 (50.0%)
+FGR+Hypertension: 12 (40.0%)
+p-value: 0.02798600699650175
+
+
+CRHBP
+Total: 97 (28.3%)
+Control: 28 (24.78%)
+PTD: 26 (36.11%)
+Severe PE: 22 (29.33%)
+FGR: 8 (21.62%)
+Control PTD: 5 (31.25%)
+FGR+Hypertension: 8 (26.67%)
+p-value: 0.5862068965517241
+
+
+MSMB
+Total: 339 (98.8%)
+Control: 110 (97.35%)
+PTD: 71 (98.61%)
+Severe PE: 75 (100.0%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.6956521739130435
+
+
+CCN5
+Total: 328 (95.6%)
+Control: 110 (97.35%)
+PTD: 71 (98.61%)
+Severe PE: 72 (96.0%)
+FGR: 32 (86.49%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 28 (93.33%)
+p-value: 0.06446776611694154
+
+
+SPINK5
+Total: 281 (81.9%)
+Control: 93 (82.3%)
+PTD: 63 (87.5%)
+Severe PE: 61 (81.33%)
+FGR: 28 (75.68%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 21 (70.0%)
+p-value: 0.24037981009495252
+
+
+OMD
+Total: 225 (65.6%)
+Control: 77 (68.14%)
+PTD: 52 (72.22%)
+Severe PE: 42 (56.0%)
+FGR: 30 (81.08%)
+Control PTD: 9 (56.25%)
+FGR+Hypertension: 15 (50.0%)
+p-value: 0.025987006496751622
+
+
+FCER2
+Total: 123 (35.9%)
+Control: 38 (33.63%)
+PTD: 35 (48.61%)
+Severe PE: 22 (29.33%)
+FGR: 9 (24.32%)
+Control PTD: 6 (37.5%)
+FGR+Hypertension: 13 (43.33%)
+p-value: 0.08745627186406797
+
+
+IL7
+Total: 285 (83.1%)
+Control: 95 (84.07%)
+PTD: 62 (86.11%)
+Severe PE: 65 (86.67%)
+FGR: 24 (64.86%)
+Control PTD: 14 (87.5%)
+FGR+Hypertension: 25 (83.33%)
+p-value: 0.11394302848575712
+
+
+IL-17C
+Total: 284 (82.8%)
+Control: 96 (84.96%)
+PTD: 62 (86.11%)
+Severe PE: 63 (84.0%)
+FGR: 28 (75.68%)
+Control PTD: 13 (81.25%)
+FGR+Hypertension: 22 (73.33%)
+p-value: 0.47726136931534235
+
+
+IL-17A
+Total: 301 (87.8%)
+Control: 102 (90.27%)
+PTD: 65 (90.28%)
+Severe PE: 68 (90.67%)
+FGR: 28 (75.68%)
+Control PTD: 13 (81.25%)
+FGR+Hypertension: 25 (83.33%)
+p-value: 0.15942028985507245
+
+
+IL-20RA
+Total: 164 (47.8%)
+Control: 54 (47.79%)
+PTD: 37 (51.39%)
+Severe PE: 42 (56.0%)
+FGR: 11 (29.73%)
+Control PTD: 7 (43.75%)
+FGR+Hypertension: 13 (43.33%)
+p-value: 0.18690654672663667
+
+
+IL-2RB
+Total: 314 (91.5%)
+Control: 103 (91.15%)
+PTD: 67 (93.06%)
+Severe PE: 72 (96.0%)
+FGR: 32 (86.49%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 25 (83.33%)
+p-value: 0.27136431784107945
+
+
+IL2
+Total: 310 (90.4%)
+Control: 107 (94.69%)
+PTD: 66 (91.67%)
+Severe PE: 69 (92.0%)
+FGR: 29 (78.38%)
+Control PTD: 12 (75.0%)
+FGR+Hypertension: 27 (90.0%)
+p-value: 0.022988505747126436
+
+
+TSLP
+Total: 340 (99.1%)
+Control: 112 (99.12%)
+PTD: 72 (100.0%)
+Severe PE: 74 (98.67%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 29 (96.67%)
+p-value: 0.5832083958020989
+
+
+SLAMF1
+Total: 308 (89.8%)
+Control: 101 (89.38%)
+PTD: 58 (80.56%)
+Severe PE: 69 (92.0%)
+FGR: 35 (94.59%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.04697651174412794
+
+
+FGF-23.1
+Total: 244 (71.1%)
+Control: 89 (78.76%)
+PTD: 47 (65.28%)
+Severe PE: 57 (76.0%)
+FGR: 20 (54.05%)
+Control PTD: 11 (68.75%)
+FGR+Hypertension: 20 (66.67%)
+p-value: 0.05647176411794103
+
+
+IL-10RA
+Total: 324 (94.5%)
+Control: 108 (95.58%)
+PTD: 67 (93.06%)
+Severe PE: 74 (98.67%)
+FGR: 33 (89.19%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 27 (90.0%)
+p-value: 0.16091954022988506
+
+
+FGF-5
+Total: 331 (96.5%)
+Control: 111 (98.23%)
+PTD: 71 (98.61%)
+Severe PE: 73 (97.33%)
+FGR: 33 (89.19%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 28 (93.33%)
+p-value: 0.07446276861569215
+
+
+FGF-21.1
+Total: 175 (51.0%)
+Control: 66 (58.41%)
+PTD: 38 (52.78%)
+Severe PE: 39 (52.0%)
+FGR: 12 (32.43%)
+Control PTD: 7 (43.75%)
+FGR+Hypertension: 13 (43.33%)
+p-value: 0.10794602698650675
+
+
+IL-22 RA1
+Total: 322 (93.9%)
+Control: 104 (92.04%)
+PTD: 67 (93.06%)
+Severe PE: 70 (93.33%)
+FGR: 36 (97.3%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 29 (96.67%)
+p-value: 0.8645677161419291
+
+
+Beta-NGF
+Total: 343 (100.0%)
+Control: 113 (100.0%)
+PTD: 72 (100.0%)
+Severe PE: 75 (100.0%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 30 (100.0%)
+p-value:  1.0
+
+
+TRANCE
+Total: 316 (92.1%)
+Control: 105 (92.92%)
+PTD: 69 (95.83%)
+Severe PE: 67 (89.33%)
+FGR: 31 (83.78%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 28 (93.33%)
+p-value: 0.26436781609195403
+
+
+IL-24
+Total: 323 (94.2%)
+Control: 110 (97.35%)
+PTD: 65 (90.28%)
+Severe PE: 73 (97.33%)
+FGR: 34 (91.89%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 26 (86.67%)
+p-value: 0.06846576711644178
+
+
+IL13
+Total: 338 (98.5%)
+Control: 112 (99.12%)
+PTD: 72 (100.0%)
+Severe PE: 74 (98.67%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 27 (90.0%)
+p-value: 0.025487256371814093
+
+
+MMP-10
+Total: 100 (29.2%)
+Control: 36 (31.86%)
+PTD: 33 (45.83%)
+Severe PE: 20 (26.67%)
+FGR: 3 (8.11%)
+Control PTD: 5 (31.25%)
+FGR+Hypertension: 3 (10.0%)
+p-value: 0.0009995002498750624
+
+
+IL10
+Total: 343 (100.0%)
+Control: 113 (100.0%)
+PTD: 72 (100.0%)
+Severe PE: 75 (100.0%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 30 (100.0%)
+p-value:  1.0
+
+
+TNF
+Total: 124 (36.2%)
+Control: 45 (39.82%)
+PTD: 35 (48.61%)
+Severe PE: 23 (30.67%)
+FGR: 5 (13.51%)
+Control PTD: 8 (50.0%)
+FGR+Hypertension: 8 (26.67%)
+p-value: 0.0029985007496251873
+
+
+IL-20
+Total: 307 (89.5%)
+Control: 101 (89.38%)
+PTD: 66 (91.67%)
+Severe PE: 71 (94.67%)
+FGR: 29 (78.38%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 25 (83.33%)
+p-value: 0.1294352823588206
+
+
+IFN-gamma
+Total: 139 (40.5%)
+Control: 46 (40.71%)
+PTD: 28 (38.89%)
+Severe PE: 34 (45.33%)
+FGR: 10 (27.03%)
+Control PTD: 6 (37.5%)
+FGR+Hypertension: 15 (50.0%)
+p-value: 0.44427786106946526
+
+
+IL4
+Total: 342 (99.7%)
+Control: 112 (99.12%)
+PTD: 72 (100.0%)
+Severe PE: 75 (100.0%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 1.0
+
+
+LIF
+Total: 87 (25.4%)
+Control: 19 (16.81%)
+PTD: 23 (31.94%)
+Severe PE: 16 (21.33%)
+FGR: 8 (21.62%)
+Control PTD: 6 (37.5%)
+FGR+Hypertension: 15 (50.0%)
+p-value: 0.0034982508745627187
+
+
+NRTN
+Total: 322 (93.9%)
+Control: 106 (93.81%)
+PTD: 70 (97.22%)
+Severe PE: 72 (96.0%)
+FGR: 34 (91.89%)
+Control PTD: 14 (87.5%)
+FGR+Hypertension: 26 (86.67%)
+p-value: 0.2158920539730135
+
+
+CX3CL1
+Total: 325 (94.8%)
+Control: 100 (88.5%)
+PTD: 71 (98.61%)
+Severe PE: 74 (98.67%)
+FGR: 34 (91.89%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.00849575212393803
+
+
+IL5
+Total: 273 (79.6%)
+Control: 88 (77.88%)
+PTD: 62 (86.11%)
+Severe PE: 62 (82.67%)
+FGR: 25 (67.57%)
+Control PTD: 14 (87.5%)
+FGR+Hypertension: 22 (73.33%)
+p-value: 0.2288855572213893
+
+
+TNFB
+Total: 245 (71.4%)
+Control: 80 (70.8%)
+PTD: 48 (66.67%)
+Severe PE: 61 (81.33%)
+FGR: 22 (59.46%)
+Control PTD: 9 (56.25%)
+FGR+Hypertension: 25 (83.33%)
+p-value: 0.05247376311844078
+
+
+IL17F
+Total: 327 (95.3%)
+Control: 107 (94.69%)
+PTD: 70 (97.22%)
+Severe PE: 69 (92.0%)
+FGR: 36 (97.3%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.527736131934033
+
+
+VMO1
+Total: 332 (96.8%)
+Control: 110 (97.35%)
+PTD: 70 (97.22%)
+Severe PE: 71 (94.67%)
+FGR: 36 (97.3%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.6946526736631684
+
+
+KLK4
+Total: 285 (83.1%)
+Control: 90 (79.65%)
+PTD: 66 (91.67%)
+Severe PE: 63 (84.0%)
+FGR: 26 (70.27%)
+Control PTD: 13 (81.25%)
+FGR+Hypertension: 27 (90.0%)
+p-value: 0.07096451774112944
+
+
+CBLN4
+Total: 333 (97.1%)
+Control: 108 (95.58%)
+PTD: 72 (100.0%)
+Severe PE: 73 (97.33%)
+FGR: 35 (94.59%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.23638180909545228
+
+
+GAMT
+Total: 91 (26.5%)
+Control: 26 (23.01%)
+PTD: 14 (19.44%)
+Severe PE: 22 (29.33%)
+FGR: 9 (24.32%)
+Control PTD: 3 (18.75%)
+FGR+Hypertension: 17 (56.67%)
+p-value: 0.005997001499250375
+
+
+PSPN
+Total: 338 (98.5%)
+Control: 111 (98.23%)
+PTD: 71 (98.61%)
+Severe PE: 74 (98.67%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 29 (96.67%)
+p-value: 0.8595702148925537
+
+
+JCHAIN
+Total: 321 (93.6%)
+Control: 108 (95.58%)
+PTD: 65 (90.28%)
+Severe PE: 70 (93.33%)
+FGR: 34 (91.89%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 28 (93.33%)
+p-value: 0.6876561719140429
+
+
+RAB6A
+Total: 142 (41.4%)
+Control: 38 (33.63%)
+PTD: 28 (38.89%)
+Severe PE: 30 (40.0%)
+FGR: 25 (67.57%)
+Control PTD: 7 (43.75%)
+FGR+Hypertension: 14 (46.67%)
+p-value: 0.01649175412293853
+
+
+RFNG
+Total: 257 (74.9%)
+Control: 81 (71.68%)
+PTD: 53 (73.61%)
+Severe PE: 59 (78.67%)
+FGR: 29 (78.38%)
+Control PTD: 11 (68.75%)
+FGR+Hypertension: 24 (80.0%)
+p-value: 0.8200899550224887
+
+
+MLN
+Total: 306 (89.2%)
+Control: 103 (91.15%)
+PTD: 69 (95.83%)
+Severe PE: 62 (82.67%)
+FGR: 31 (83.78%)
+Control PTD: 13 (81.25%)
+FGR+Hypertension: 28 (93.33%)
+p-value: 0.05897051474262868
+
+
+FLT3
+Total: 286 (83.4%)
+Control: 98 (86.73%)
+PTD: 61 (84.72%)
+Severe PE: 61 (81.33%)
+FGR: 33 (89.19%)
+Control PTD: 10 (62.5%)
+FGR+Hypertension: 23 (76.67%)
+p-value: 0.18640679660169915
+
+
+SFTPA1
+Total: 309 (90.1%)
+Control: 106 (93.81%)
+PTD: 66 (91.67%)
+Severe PE: 66 (88.0%)
+FGR: 35 (94.59%)
+Control PTD: 12 (75.0%)
+FGR+Hypertension: 24 (80.0%)
+p-value: 0.06846576711644178
+
+
+CXCL14
+Total: 310 (90.4%)
+Control: 108 (95.58%)
+PTD: 64 (88.89%)
+Severe PE: 63 (84.0%)
+FGR: 33 (89.19%)
+Control PTD: 14 (87.5%)
+FGR+Hypertension: 28 (93.33%)
+p-value: 0.12443778110944528
+
+
+CD300E
+Total: 322 (93.9%)
+Control: 113 (100.0%)
+PTD: 70 (97.22%)
+Severe PE: 64 (85.33%)
+FGR: 33 (89.19%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 26 (86.67%)
+p-value: 0.0004997501249375312
+
+
+SPINK4
+Total: 336 (98.0%)
+Control: 110 (97.35%)
+PTD: 72 (100.0%)
+Severe PE: 72 (96.0%)
+FGR: 36 (97.3%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.5892053973013494
+
+
+CDHR2
+Total: 335 (97.7%)
+Control: 109 (96.46%)
+PTD: 72 (100.0%)
+Severe PE: 71 (94.67%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 0.30134932533733133
+
+
+GGA1
+Total: 235 (68.5%)
+Control: 77 (68.14%)
+PTD: 48 (66.67%)
+Severe PE: 51 (68.0%)
+FGR: 26 (70.27%)
+Control PTD: 10 (62.5%)
+FGR+Hypertension: 23 (76.67%)
+p-value: 0.9380309845077461
+
+
+PTPRM
+Total: 148 (43.1%)
+Control: 60 (53.1%)
+PTD: 32 (44.44%)
+Severe PE: 25 (33.33%)
+FGR: 13 (35.14%)
+Control PTD: 5 (31.25%)
+FGR+Hypertension: 13 (43.33%)
+p-value: 0.09795102448775612
+
+
+TPT1
+Total: 221 (64.4%)
+Control: 70 (61.95%)
+PTD: 55 (76.39%)
+Severe PE: 49 (65.33%)
+FGR: 21 (56.76%)
+Control PTD: 8 (50.0%)
+FGR+Hypertension: 18 (60.0%)
+p-value: 0.15992003998001
+
+
+L1CAM
+Total: 136 (39.7%)
+Control: 62 (54.87%)
+PTD: 33 (45.83%)
+Severe PE: 22 (29.33%)
+FGR: 9 (24.32%)
+Control PTD: 4 (25.0%)
+FGR+Hypertension: 6 (20.0%)
+p-value: 0.0004997501249375312
+
+
+HLA-E
+Total: 293 (85.4%)
+Control: 101 (89.38%)
+PTD: 61 (84.72%)
+Severe PE: 61 (81.33%)
+FGR: 32 (86.49%)
+Control PTD: 15 (93.75%)
+FGR+Hypertension: 23 (76.67%)
+p-value: 0.4057971014492754
+
+
+NPY
+Total: 340 (99.1%)
+Control: 112 (99.12%)
+PTD: 71 (98.61%)
+Severe PE: 74 (98.67%)
+FGR: 37 (100.0%)
+Control PTD: 16 (100.0%)
+FGR+Hypertension: 30 (100.0%)
+p-value: 1.0
+
+
+
+
+
+Number of samples: 343
+Number of proteins: 353
+
+
+Number of proteins failing cutoff: 108
+Bonferroni Correction alpha: 0.000462962962962963
+Proteins with significantly different percentage missing between groups following Bonferroni correction:
+Number of proteins failing cutoff with significant difference in distribution of missingess between groups: 0
