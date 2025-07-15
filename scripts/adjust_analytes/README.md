@@ -4,7 +4,7 @@
 3. Filters for analytes that meet the following criteria: missingness < 20% of samples, unique value in > 50% of samples, miRNA minimum read count of 10, and transcript mRNA minimum read count of 500.
 4. For each analyte for each fetal sex fit a generalized linear model: `analyte ~ weeks gestation at delivery + pregravid BMI2 + C(Labor Initiation) + C(Smoking Use) + C(Illicit Drug Use)`.
 5. Perform benjamini-hochberg multiple hypothesis correction
-6. For analytes that are significantly regulated by gestational week, adjust the analytes value to 40 weeks gestation for those analytes for those fetal sex. Adjusted analyte values are saved to [`data/normalized_cleaned_adjuste'](../../data/normalized_cleaned_adjusted)
+6. For analytes that are significantly regulated by gestational week, adjust the analytes value to 40 weeks gestation for those analytes for those fetal sex. Adjusted analyte values are saved to [`data/normalized_cleaned_adjusted'](../../data/normalized_cleaned_adjusted)
 7. Compare analytes significantly regulated by gestational weeks in female fetuses vs male fetuses.
 
 `AdjustAnalytesForCovariates-Randomized-FDR.ipynb`:
