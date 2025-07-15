@@ -1,0 +1,422 @@
+IL2-RA (protein)
+MFGE8 (protein)
+PRELP (protein)
+TF (protein)
+AXL (protein)
+SPATA9
+hsa-miR-3153
+PAQR3
+GTF2I-AS1
+IGFBP-7 (protein)
+SCARF1 (protein)
+TNFRSF14 (protein)
+CD99L2 (protein)
+IgG Fc receptor II-b (protein)
+glutamine_degradant*
+MATN2 (protein)
+CGA
+PSGL-1 (protein)
+DKK3 (protein)
+TM (protein)
+uPA (protein)
+ESAM (protein)
+ACP6
+THSD7A
+SOD2 (protein)
+hsa-miR-6126
+mannonate*
+hsa-miR-9-5p
+GBA1
+CGB5
+MCP-1 (protein)
+ADGRG6
+PDGFRB (protein)
+RNF39
+hsa-miR-6081
+ABCA12
+RAB8B
+hsa-miR-1292-5p
+GFER (protein)
+LTBR (protein)
+hsa-miR-6071
+SCD
+VWA5A
+SEPTIN3
+ANGPT1 (protein)
+VNN3P
+TNF-R1 (protein)
+hsa-miR-9-3p
+SERTAD1
+RRM2
+FAM3B
+BARD1
+hsa-miR-195-5p
+LAMA4 (protein)
+TICRR
+TNFRSF11A (protein)
+ACAN (protein)
+CKMT1B
+KIF11
+X-25422
+ITGB1 (protein)
+1-stearoyl-2-docosahexaenoyl-GPE (18:0/22:6)*
+hsa-miR-190b
+RARRES2 (protein)
+CSF-1 (protein)
+CCNA2
+DIAPH3
+CRIM1 (protein)
+IL-1RT1 (protein)
+4-methyl-2-oxopentanoate
+PAG1
+ACTN1
+CD4 (protein)
+CPS1
+SCF (protein)
+KEL
+3-methyl-2-oxobutyrate
+N,N-dimethyl-pro-pro
+CD74 (protein)
+IL16 (protein)
+ANLN
+CNTNAP2
+MCP-4 (protein)
+CALCRL
+C1QA (protein)
+SAT1
+PIK3CB
+ANP32E
+CLDN16
+RN7SL4P
+HTRA2 (protein)
+IGSF8
+IFNGR2 (protein)
+DEPDC1
+CLEC14A (protein)
+methyl glucopyranoside (alpha + beta)
+FHL1
+hsa-miR-4784
+CCP110
+CSH1
+BLNK
+EVPL
+PREP
+3-hydroxydecanoylcarnitine
+Notch 3 (protein)
+hsa-miR-4304
+KIT
+TPX2
+PRRG1
+IQGAP3
+POLQ
+hsa-miR-31-5p
+PAPPA (protein)
+OPG (protein)
+FLT1
+VAT1 (protein)
+BRI3BP
+DTL
+TOP2A
+ARHGAP10
+ASPM
+HAVCR2 (protein)
+ARHGAP24
+hsa-miR-3692-5p
+CD93 (protein)
+C1orf226
+AKR1B1 (protein)
+1-stearoyl-GPG (18:0)
+hsa-miR-1539
+YOD1
+KNL1
+ANGPTL4 (protein)
+CD209 (protein)
+LDLR
+ENSG00000270504
+NR6A1
+FIRRE
+PDGFD
+hsa-miR-184
+OBSCN
+TSPAN13
+ADIRF
+CD248
+LMNB1
+SLC11A1
+PAMR1 (protein)
+KIF23
+hsa-miR-19b-3p
+ECEL1P2
+CDK1
+O-methyltyrosine
+ATAD5
+PRSS8 (protein)
+PBXIP1
+ARHGAP28
+PLXDC2
+TXNDC15 (protein)
+ZGRF1
+LAP3 (protein)
+ENPP2 (protein)
+CTSD (protein)
+PPIB (protein)
+X-12117
+FBLIM1
+PHACTR2
+NDC1
+AP-N (protein)
+KANTR
+imidazole propionate
+FRMD4A
+(S)-3-hydroxybutyrylcarnitine
+CRYBG1
+CSF2RB
+DLK-1 (protein)
+NIPA1
+hsa-let-7c-5p
+TRIM24
+TMSB10 (protein)
+RACGAP1
+BRCA1
+PLOD2
+MYCN
+TMPO
+FER1L5
+6-phosphogluconate
+SRC (protein)
+HLTF
+CNN2
+LIMS1
+ARHGAP11A
+GLO1 (protein)
+GREM2
+KIAA1671
+LIFR
+hsa-miR-4732-5p
+HELLS
+TPP1
+FAS (protein)
+CKAP2
+PLEKHA2
+CYFIP2
+RN7SL2
+GLA
+KATNBL1
+hsa-miR-15b-3p
+EDN1
+FANCI
+guanosine 5'-diphospho-fucose
+SKP2
+ECEL1P1
+CCDC144CP
+ZNF90
+KBTBD8
+TNFRSF1B
+hsa-miR-3141
+ERVMER34-1
+SPINT2 (protein)
+ATAD2
+MMS22L
+LMO7
+hsa-miR-7977
+POLE
+CEP78
+DDAH1
+SHTN1
+ENSG00000251584
+CD163 (protein)
+tryptophan
+TRAIL (protein)
+MMP14
+hsa-miR-2277-3p
+X-25035
+BRAF
+SLC2A13
+TMEM154
+X-23782
+sedoheptulose
+FANCM
+Flt3L (protein)
+USP3
+ERRFI1
+ZDHHC9
+PDK1
+VSIG4 (protein)
+MOXD1
+INPP1 (protein)
+KNTC1
+hsa-miR-182-5p
+PRDM8
+CTSL1 (protein)
+L1CAM
+RFC3
+fructose 1,6-diphosphate/glucose 1,6-diphosphate/myo-inositol diphosphates
+CNGA1
+hsa-miR-10a-5p
+PEAR1 (protein)
+SUSD2
+NMT2
+CGB3 (protein)
+CD97 (protein)
+TTN
+CLDN8
+KIAA0586
+CIT
+P4HB (protein)
+GYS1
+IL-6RA (protein)
+IGHG1
+QSER1
+CENPE
+MIR503HG
+N(1)-acetylspermine
+FAT4
+ENSG00000275202
+guanosine
+VPS13A
+EZH2
+ACTG1
+FANCD2
+FMN1
+CCNB1
+RRS1-DT
+RNF144B
+DPYD
+ARSA (protein)
+FIGNL1
+PRTG
+MAP3K13
+HK2
+LINC01968
+SGK3
+MCP-2 (protein)
+hsa-miR-431-3p
+ATP13A3
+PLEKHF1
+LPIN1
+DECR1 (protein)
+ALPP (protein)
+WDR75
+N-methylpipecolate
+MKI67
+BCAT1
+MMP19
+PDE4D
+CRELD2 (protein)
+PTPRF (protein)
+gamma-glutamylisoleucine*
+1-methyl-5-imidazolelactate
+DHFR
+RGCC
+IPMK
+AIF1 (protein)
+ARHGAP25 (protein)
+LIN28B
+SNX5
+CATIP
+RND3
+ENSG00000251034
+FRK
+FZD3
+SESTD1
+hsa-miR-503-3p
+ENO1
+HSP 27 (protein)
+N-acetyl-glucosamine 1-phosphate
+MBNL3
+TMEM140
+SCARNA6
+SYNPO2L
+GBP2
+SERPINI1
+DTWD1
+LGMN (protein)
+NT5E
+IDUA (protein)
+PUS7L
+KCTD17
+homoarginine
+TFF3 (protein)
+ZBTB33
+UBASH3B
+FRAT1
+BLVRB
+MTHFD1
+ST8SIA4
+TET3
+TCL6
+OAT
+HACD2
+SLC1A2
+DPEP2
+FARSB
+PDIA5
+SMC4
+CDH5 (protein)
+HADH
+GCNT2
+ELP4
+HACD4
+ROBO1
+RN7SL1
+GGCX
+SIRPA
+FOXI3
+CALML3-AS1
+AIMP1 (protein)
+ACTB
+ANKRD37
+PAICS
+hsa-miR-193b-5p
+FUT4
+GLIS2
+MAP3K1
+LINC01483
+GPR180
+ICA1L
+CCNE1
+RAB31
+UGGT2
+PARP8
+hsa-miR-148a-3p
+hsa-miR-199b-5p
+KREMEN1
+L1TD1
+FREM2
+MIR3609
+WDFY2
+adenine
+X-25464
+hsa-miR-6872-3p
+RASGEF1B
+hsa-miR-3927-3p
+ZNF43
+COLEC12 (protein)
+DHTKD1
+SNORA53
+DIPK2A
+TNFRSF10A (protein)
+OGFRL1
+PGM3
+ENAH
+DCN (protein)
+APPL1
+CDR2L
+BMP6
+phenylalanylalanine
+POT1
+CHRNB1
+SPIN4
+PHF6
+QSOX1
+CCNYL1
+MERTK
+HO-1 (protein)
+INHA
+IGHEP1
+MESDC2 (protein)
+SCGB3A2 (protein)
+N-acetylglucosamine 6-phosphate
+ADCY5
+X-25111
+JADE1

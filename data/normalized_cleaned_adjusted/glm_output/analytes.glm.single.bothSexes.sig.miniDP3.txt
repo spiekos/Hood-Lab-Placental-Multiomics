@@ -1,0 +1,136 @@
+HTRA4
+SELE (protein)
+ADAMTS3
+androstenediol (3beta,17beta) disulfate (2)
+BIN2
+IGHG4
+estriol
+X-24545
+TXK
+AFP (protein)
+HUNK
+N1-Methyl-2-pyridone-5-carboxamide
+hsa-miR-210-3p
+hsa-miR-137
+androstenediol (3beta,17beta) disulfate (1)
+CD300LG (protein)
+ADIRF-AS1
+CCL17 (protein)
+HEXB
+N('1)-acetylspermidine
+GPR68
+S100A16 (protein)
+hsa-miR-520c-3p
+STC1
+ARTN
+SPTBN2
+N1,N12-diacetylspermine
+CSHL1
+TIE2 (protein)
+FABP4 (protein)
+ENSG00000224516
+LINC02291
+N,N,N-trimethyl-alanylproline betaine (TMAP)
+MME
+3-hydroxyhexanoylcarnitine (1)
+TRAIL-R2 (protein)
+CLDN1
+ENG
+3-hydroxyoctanoylcarnitine (1)
+CLIP2 (protein)
+TMEM74B
+3-hydroxyoctanoylcarnitine (2)
+TNFRSF10C (protein)
+butyrylcarnitine (C4)
+SLC26A6
+hsa-miR-34c-5p
+PECAM-1 (protein)
+SLC6A8
+KIAA1549
+TRIM45
+hsa-miR-138-5p
+PRKD3
+ACOXL
+ST18
+IGHA2
+CGB8
+CABLES1
+AFF3
+NECTIN4-AS1
+PCDH1 (protein)
+ENSG00000230490
+CGB3
+IL33 (protein)
+VWCE
+SOD1-DT
+EGLN3
+USP27X-DT
+FBXL19-AS1
+GPR155
+PPP1R14C
+formiminoglutamate
+FRZB
+hsa-miR-34b-5p
+PHYHIP
+SPACA6-AS1
+TLCD5
+AIF1L
+JHY
+LINC00656
+MINPP1
+TMEM45A
+hsa-miR-34b-3p
+TREM1
+LINC02175
+IGHE
+PLPP2
+IGHA1
+LCAL1
+PTPRQ
+CDK14
+LEP
+CORO6
+cystathionine
+ANGPT2
+TRMT9B
+FBXW11P1
+MRC2
+PHGDH
+GSDMB
+TWIST1
+KEAP1
+AFAP1
+hsa-miR-139-5p
+pregnanolone/allopregnanolone sulfate
+CRACD
+MTHFD2
+ALPP
+RAB6B
+5alpha-pregnan-3beta,20alpha-diol monosulfate (1)
+PHETA1
+MYO7B
+FZD7
+FGF12
+hsa-miR-584-5p
+ABCB1
+PLAU
+hsa-miR-526b-3p
+hsa-miR-135b-5p
+CITED4
+PAPPA-AS1
+SASH1
+3-methoxytyramine sulfate
+CTRC (protein)
+taurochenodeoxycholate
+DEPP1
+GATA2-AS1
+17beta-estradiol
+ENSG00000261821
+AVIL
+AXIN2
+H2AC6
+TMEM229B
+VEGFA
+hsa-miR-489-3p
+SLC23A2
+FLNB

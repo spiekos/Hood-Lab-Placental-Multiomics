@@ -1,0 +1,310 @@
+androstenediol (3beta,17beta) disulfate (2)
+X-24545
+estriol
+pregnenediol disulfate (C21H34O8S2)*
+androstenediol (3beta,17beta) disulfate (1)
+testosterone sulfate
+dehydroepiandrosterone sulfate (DHEA-S)
+3-hydroxy-3-methylglutarate
+AFP (protein)
+X-21364
+5alpha-pregnan-3beta,20alpha-diol disulfate
+pregnanolone/allopregnanolone sulfate
+N-acetylputrescine
+N-acetylhistidine
+TNFRSF10C (protein)
+cystathionine
+cortisone
+BIN2
+TMEM74B
+N('1)-acetylspermidine
+hsa-miR-34b-3p
+hsa-miR-34c-5p
+HTRA4
+FBXL19-AS1
+CSHL1
+N-acetyl-isoputreanine
+TXK
+IGHG4
+ADAMTS3
+hsa-miR-34b-5p
+hsa-miR-520c-3p
+ARTN
+AFF3
+3-hydroxyhexanoylcarnitine (1)
+5alpha-pregnan-3beta,20beta-diol monosulfate (1)
+formiminoglutamate
+LINC02291
+21-hydroxypregnanolone monosulfate (1)
+LCAL1
+N1,N12-diacetylspermine
+HUNK
+SOWAHC
+GATA2-AS1
+ADIRF-AS1
+hsa-miR-137
+NEB
+TREM1
+PHETA1
+estrone
+hsa-miR-139-5p
+CDK14
+N-acetyl-beta-alanine
+ENSG00000230490
+3-carboxy-4-methyl-5-pentyl-2-furanpropionate (3-CMPFP)**
+3-hydroxyoctanoylcarnitine (2)
+LINC00656
+caffeine
+SELE (protein)
+hsa-miR-489-3p
+16a-hydroxy DHEA 3-sulfate
+SRCIN1
+SPTBN2
+CLDN1
+PHYHIP
+myo-inositol
+hydroxypalmitoyl sphingomyelin (d18:1/16:0(OH))**
+N,N,N-trimethyl-alanylproline betaine (TMAP)
+carnosine
+X-26108
+NR3C2
+LINC02175
+HSD17B1P1
+OPN (protein)
+3-(4-hydroxyphenyl)lactate
+PFKP
+FBXW11P1
+TRMT9B
+5alpha-pregnan-diol disulfate
+ACOXL
+taurochenodeoxycholate
+palmitoylcholine
+MUC19
+ENG
+hsa-miR-526b-3p
+ST18
+MUC15
+TKT
+ENSG00000261324
+FZD7
+ENSG00000251095
+ENSG00000261821
+KIAA1549
+AFAP1
+ENSG00000279662
+hsa-miR-194-5p
+CCK
+RAB6B
+2,6-dihydroxybenzoic acid
+ENSG00000236283
+ENSG00000224516
+DAPK1
+TLCD5
+MYO7B
+JPT1
+N-palmitoyl-sphinganine (d18:0/16:0)
+HSD17B1
+CABLES1
+CTRC (protein)
+CLMN
+CATSPERB
+DNAJA4
+hsa-miR-210-3p
+FLNB
+FRZB
+PSG8-AS1
+acetylcholine
+NUAK1
+NECTIN4-AS1
+trans-4-hydroxyproline
+CA10
+taurochenodeoxycholic acid 3-sulfate
+SOX4
+IGHA1
+proline
+SLC34A2
+N-methylproline
+JHY
+DUSP4
+MRC2
+FABP4 (protein)
+EGLN3
+PRKD3
+3-methoxytyramine sulfate
+5alpha-pregnan-3beta,20alpha-diol monosulfate (1)
+hsa-miR-671-3p
+LINC00654
+ALPP
+SPACA6-AS1
+PLC (protein)
+SOD1-DT
+GPR68
+USP27X-DT
+TXNRD1
+tyrosine
+ZNNT1
+hsa-miR-584-5p
+PPP1R14C
+betaine
+PHGDH
+ceramide (d18:1/17:0, d17:1/18:0)*
+3-hydroxypalmitoylcarnitine
+CD300LG (protein)
+beta-hydroxyisovaleroylcarnitine
+PFN2
+TMEM45A
+LEP
+FGF12
+oleoylcholine
+MINPP1
+MME
+SPON2
+XKRX
+KIF26B
+ENSG00000266088
+STC1
+succinylcarnitine (C4-DC)
+asparagine
+TRAIL-R2 (protein)
+FSTL3
+ENSG00000247121
+PLAC8
+DPPA4
+X-25433
+AIF1L
+U-PAR (protein)
+creatine
+STX1B
+MAGEA4
+CLDN19
+beta-hydroxyisovalerate
+X-26107
+BCL2
+stearoylcholine*
+BACE2-IT1
+NAV2-AS4
+RHOBTB3
+GSEC
+hsa-miR-135b-5p
+N1-Methyl-2-pyridone-5-carboxamide
+TMEM229B
+PECAM-1 (protein)
+ANGPT2
+DENND2D
+SLC24A4
+PIP5K1B
+stearoyl sphingomyelin (d18:1/18:0)
+PLPP2
+N-stearoyl-sphingosine (d18:1/18:0)*
+SLC6A9
+ENSG00000260711
+RORA
+SASH1
+sphinganine
+X-11381
+DGKI
+ABCB1
+putrescine
+hsa-miR-23b-3p
+CRACD
+SLC20A1
+hsa-miR-3614-3p
+PLEKHA7
+3-hydroxyoctanoylcarnitine (1)
+IGHA2
+sphingomyelin (d18:2/24:2)*
+AVIL
+MTHFD2
+butyrylcarnitine (C4)
+NOTUM
+IL2RB
+LYNX1
+DNAJA1
+PLAU
+HEXB
+hsa-miR-138-5p
+BORCS5
+GCLM
+GSDMB
+MTCO1P15
+GPC4
+CXCL6 (protein)
+H2AC6
+N-formylanthranilic acid
+TRIM45
+ENSG00000261632
+4-cholesten-3-one
+IMPDH1P5
+FN1
+hsa-miR-3614-5p
+hsa-miR-551b-3p
+CORO6
+IGHE
+GRK5
+DAPK1-IT1
+S100A16 (protein)
+LINC00885
+C2orf72
+CGB3
+MAGEA10
+TC2N
+IL33 (protein)
+TIE2 (protein)
+RAB15
+RBBP6
+CILK1
+MMP2
+hsa-miR-23a-3p
+17beta-estradiol
+GABRA4
+SLC23A2
+KEAP1
+RASAL2-AS1
+TPTEP1
+ENSG00000228707
+propionylcarnitine (C3)
+IQGAP2
+VEGFA
+SLC26A6
+NECTIN3-AS1
+NT5DC3
+LGSN
+NMNAT2
+pro-hydroxy-pro
+CCL17 (protein)
+SLC16A4
+ENSG00000219928
+ARHGAP42
+quinolinate
+LNCRNA-IUR
+hsa-miR-103b
+KIAA0513
+NRCAM
+SH3PXD2B
+PAPPA-AS1
+GPR155
+VWCE
+cytidine-5'-diphosphoethanolamine
+CRYAB
+SLC6A8
+TWIST1
+LINC00649
+phenyllactate (PLA)
+ARL5A
+CITED4
+CGB8
+AXIN2
+COL5A1
+CLIP2 (protein)
+hexanoylcarnitine (C6)
+PCDH1 (protein)
+MAFK
+LRIG3
+DEPP1
+SEM1
+NAB2
+ZC2HC1C
+FAT2
+CTSF
+taurohyocholate*
+PTPRQ

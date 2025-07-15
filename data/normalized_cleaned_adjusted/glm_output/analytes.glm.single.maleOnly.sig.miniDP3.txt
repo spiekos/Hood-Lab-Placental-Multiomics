@@ -1,0 +1,174 @@
+pregnenediol disulfate (C21H34O8S2)*
+testosterone sulfate
+dehydroepiandrosterone sulfate (DHEA-S)
+3-hydroxy-3-methylglutarate
+X-21364
+5alpha-pregnan-3beta,20alpha-diol disulfate
+N-acetylputrescine
+N-acetylhistidine
+cortisone
+N-acetyl-isoputreanine
+5alpha-pregnan-3beta,20beta-diol monosulfate (1)
+21-hydroxypregnanolone monosulfate (1)
+SOWAHC
+NEB
+estrone
+N-acetyl-beta-alanine
+3-carboxy-4-methyl-5-pentyl-2-furanpropionate (3-CMPFP)**
+caffeine
+16a-hydroxy DHEA 3-sulfate
+SRCIN1
+myo-inositol
+hydroxypalmitoyl sphingomyelin (d18:1/16:0(OH))**
+carnosine
+X-26108
+NR3C2
+HSD17B1P1
+OPN (protein)
+3-(4-hydroxyphenyl)lactate
+PFKP
+5alpha-pregnan-diol disulfate
+palmitoylcholine
+MUC19
+MUC15
+TKT
+ENSG00000261324
+ENSG00000251095
+ENSG00000279662
+hsa-miR-194-5p
+CCK
+2,6-dihydroxybenzoic acid
+ENSG00000236283
+DAPK1
+JPT1
+N-palmitoyl-sphinganine (d18:0/16:0)
+HSD17B1
+CLMN
+CATSPERB
+DNAJA4
+PSG8-AS1
+acetylcholine
+NUAK1
+trans-4-hydroxyproline
+CA10
+taurochenodeoxycholic acid 3-sulfate
+SOX4
+proline
+SLC34A2
+N-methylproline
+DUSP4
+hsa-miR-671-3p
+LINC00654
+PLC (protein)
+TXNRD1
+tyrosine
+ZNNT1
+betaine
+ceramide (d18:1/17:0, d17:1/18:0)*
+3-hydroxypalmitoylcarnitine
+beta-hydroxyisovaleroylcarnitine
+PFN2
+oleoylcholine
+SPON2
+XKRX
+KIF26B
+ENSG00000266088
+succinylcarnitine (C4-DC)
+asparagine
+FSTL3
+ENSG00000247121
+PLAC8
+DPPA4
+X-25433
+U-PAR (protein)
+creatine
+STX1B
+MAGEA4
+CLDN19
+beta-hydroxyisovalerate
+X-26107
+BCL2
+stearoylcholine*
+BACE2-IT1
+NAV2-AS4
+RHOBTB3
+GSEC
+DENND2D
+SLC24A4
+PIP5K1B
+stearoyl sphingomyelin (d18:1/18:0)
+N-stearoyl-sphingosine (d18:1/18:0)*
+SLC6A9
+ENSG00000260711
+RORA
+sphinganine
+X-11381
+DGKI
+putrescine
+hsa-miR-23b-3p
+SLC20A1
+hsa-miR-3614-3p
+PLEKHA7
+sphingomyelin (d18:2/24:2)*
+NOTUM
+IL2RB
+LYNX1
+DNAJA1
+BORCS5
+GCLM
+MTCO1P15
+GPC4
+CXCL6 (protein)
+N-formylanthranilic acid
+ENSG00000261632
+4-cholesten-3-one
+IMPDH1P5
+FN1
+hsa-miR-3614-5p
+hsa-miR-551b-3p
+GRK5
+DAPK1-IT1
+LINC00885
+C2orf72
+MAGEA10
+TC2N
+RAB15
+RBBP6
+CILK1
+MMP2
+hsa-miR-23a-3p
+GABRA4
+RASAL2-AS1
+TPTEP1
+ENSG00000228707
+propionylcarnitine (C3)
+IQGAP2
+NECTIN3-AS1
+NT5DC3
+LGSN
+NMNAT2
+pro-hydroxy-pro
+SLC16A4
+ENSG00000219928
+ARHGAP42
+quinolinate
+LNCRNA-IUR
+hsa-miR-103b
+KIAA0513
+NRCAM
+SH3PXD2B
+cytidine-5'-diphosphoethanolamine
+CRYAB
+LINC00649
+phenyllactate (PLA)
+ARL5A
+COL5A1
+hexanoylcarnitine (C6)
+MAFK
+LRIG3
+SEM1
+NAB2
+ZC2HC1C
+FAT2
+CTSF
+taurohyocholate*
