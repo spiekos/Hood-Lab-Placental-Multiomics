@@ -1,0 +1,5 @@
+These are all of the data used in Piekos et al. 2025
+- [`raw`](raw) contains all of the raw processed metabolomics (Metabolon), proteomics (Olink), miRNA (short RNA-seq), and transcripts (i.e. mRNA; long RNA-seq) as well as the clinical features, placental histopathology reports, and other descriptive files.
+- [`normalized_cleaned`](normalized_cleaned) contains the normalized and cleaned data from [`raw`](raw) that were processed using the [`data_cleaning`](../scripts/data_cleaning) scripts.
+- [`normalized_cleaned_adjusted`](normalized_cleaned_adjusted) contains the data that has been normalized, cleaned, passes thresholds, and is adjusted for a number of covariates including fetal sex and gestational age as processed using the [`adjust_analytes`](../scripts/adjust_analytes) scripts.
+- [`cellular_deconvolution`](cellular_deconvolution) contains the data files related to the cellular deconvolution analysis using the placenta bulk RNA-seq data. This analysis was done using CIBERSORTx. We include the output file from this and additional downstream summary statistics files here.
